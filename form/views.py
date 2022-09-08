@@ -129,3 +129,5 @@ class RegistrationFormView(
     
     def patch(self, request, *args, **kwargs):
         return super().update(request, *args, **kwargs)
+
+print("Hello")
