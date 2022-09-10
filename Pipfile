@@ -12,6 +12,7 @@ django-filter = "*"
 whitenoise = "*"
 djangorestframework-simplejwt = "*"
 django-storages = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

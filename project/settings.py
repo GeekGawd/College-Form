@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'form',
     'rest_framework_simplejwt',
+    'corsheaders',
 ]
 
 
@@ -168,10 +169,6 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', "https://*.azurewebsites.net/"]
-
-CORS_ORIGIN_ALLOW_ALL = True
-
 AUTH_USER_MODEL = 'form.User'
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -189,3 +186,16 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 AWS_S3_VERIFY = True
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', "https://*.azurewebsites.net/"]
+
+CORS_ORIGIN_ALLOW_ALL = True
