@@ -13,7 +13,6 @@ from django.contrib.auth.hashers import check_password
 
 
 
-
 # Create your views here.
 
 def send_otp_email(email,subject):
