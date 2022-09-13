@@ -9,6 +9,8 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('form/', RegistrationFormView.as_view()),
 
+    path('form/list/', RegistrationListView.as_view(), name='form-list'),
+
     path('signup/', SignUPView.as_view()),
 
     path('reset/', PasswordResetOTP.as_view(), name='passwordreset'),

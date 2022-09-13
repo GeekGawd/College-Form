@@ -1,3 +1,4 @@
+from urllib import request
 from django.shortcuts import render
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
@@ -110,7 +111,8 @@ class RegistrationFormView(
                         generics.GenericAPIView,
                         mixins.RetrieveModelMixin,
                         mixins.CreateModelMixin,
-                        mixins.UpdateModelMixin
+                        mixins.UpdateModelMixin,
+                        mixins.DestroyModelMixin
                             ):
     parser_classes = [parsers.MultiPartParser, parsers.FormParser, parsers.JSONParser]
     permission_classes = [IsAuthenticated]
@@ -128,3 +130,13 @@ class RegistrationFormView(
     
     def patch(self, request, *args, **kwargs):
         return super().update(request, *args, **kwargs)
+    
+    def delete(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
+
+class RegistrationListView(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = RegistrationSerializer
+
+    def get_queryset(self):
+        return Registration.objects.filter(user=self.request.user)
