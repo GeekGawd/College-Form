@@ -108,7 +108,7 @@ ONLINE_FDP = [
 ]
 
 class Registration(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
     college_email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=10, blank=True, unique = True,
