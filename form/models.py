@@ -109,8 +109,8 @@ ONLINE_FDP = [
 
 class Registration(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    college_email = models.EmailField(unique=True, null=True)
-    phone_number = models.CharField(max_length=10, unique = True,
+    college_email = models.EmailField(null=True)
+    phone_number = models.CharField(max_length=10,
                                     validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
     name = models.CharField(max_length=250)
     department = models.CharField(
