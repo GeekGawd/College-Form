@@ -109,12 +109,12 @@ ONLINE_FDP = [
 
 class Registration(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    college_email = models.EmailField(unique=True, null=True)
+    phone_number = models.CharField(max_length=10, unique = True,
+                                    validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
     name = models.CharField(max_length=250)
-    college_email = models.EmailField(unique=True)
-    phone_number = models.CharField(max_length=10, blank=True, unique = True,
-                                    validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),])
     department = models.CharField(
-        max_length=100,
+        max_length=100, 
         choices=DEPARTMENTS
     )
     designation = models.CharField(max_length=100)
@@ -123,16 +123,16 @@ class Registration(models.Model):
         choices=FDP_TYPE
     )
     face_to_face_fdp = models.CharField(
-                                            max_length=200, 
-                                            choices=FACE_TO_FACE_FDP,
-                                            blank=True,
-                                            null=True
+                                        max_length=200, 
+                                        choices=FACE_TO_FACE_FDP,
+                                        blank=True,
+                                        null=True
                                         )
     online_fdp = models.CharField(
-                                    max_length=200,
-                                    choices=ONLINE_FDP,
-                                    blank=True,
-                                    null=True
+                                max_length=200,
+                                choices=ONLINE_FDP,
+                                blank=True,
+                                null=True
                                 )
     starting_date = models.CharField(max_length=15)
     end_date = models.CharField(max_length=15)
