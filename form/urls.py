@@ -13,6 +13,10 @@ urlpatterns = [
 
     path('signup/', SignUPView.as_view()),
 
+    path('signup/verify/', SignUpOTPVerification.as_view(), name = 'signupverification'),
+
+    path('signup/sendotp/', SignUpOTP.as_view(), name = 'sendotp'),
+
     path('reset/', PasswordResetOTP.as_view(), name='passwordreset'),
 
     path('reset/verify/', PasswordResetOTPConfirm.as_view(), name='passwordresetconfirmation'),

@@ -2,7 +2,7 @@ from rest_framework import serializers
 from form.models import Registration, User
 from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
-import re
+import re, itertools
 
 
 class RegistrationSerializer(serializers.ModelSerializer):
@@ -32,12 +32,12 @@ class UserSerializer(serializers.ModelSerializer):
         return email
 
     def create(self, validated_data):
-        password = User.objects.make_random_password()
+        email = validated_data['email']
+        password = ["".join(x) for _, x in itertools.groupby(email, key=str.isdigit)][0] + "@1234"
         user = User(**validated_data)
         user.set_password(password)
         user.is_active = True
         user.save()
-        email = validated_data.pop('email')
 
         # Send password to the user on their email
         subject = "Login Credentials for College Form"
