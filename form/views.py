@@ -128,7 +128,6 @@ class ChangePassword(generics.GenericAPIView):
 class RegistrationFormView(
                         generics.GenericAPIView,
                         mixins.RetrieveModelMixin,
-                        mixins.CreateModelMixin,
                         mixins.UpdateModelMixin,
                         mixins.DestroyModelMixin
                             ):
@@ -145,15 +144,16 @@ class RegistrationFormView(
         except ObjectDoesNotExist:
             return Response({"status": "No Form Found"}, status=status.HTTP_404_NOT_FOUND)
     
-    def post(self, request, *args, **kwargs):
-        request.data.update({"user":request.user.id})
-        return super().create(request, *args, **kwargs)
-    
     def patch(self, request, *args, **kwargs):
         return super().update(request, *args, **kwargs)
     
     def delete(self, request, *args, **kwargs):
         return super().destroy(request, *args, **kwargs)
+
+class PostRegistrationView(generics.CreateAPIView):
+    parser_classes = [parsers.MultiPartParser, parsers.FormParser, parsers.JSONParser]
+    permission_classes = [IsAuthenticated]
+    serializer_class = RegistrationSerializer
 
 class RegistrationListView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
@@ -171,11 +171,8 @@ class SignUpOTP(generics.GenericAPIView):
             return Response({"status": "User is already registered."}, status=status.HTTP_403_FORBIDDEN)
         except:
             if request_email:
-                # try:
                 send_login_mail(request_email, "[OTP] New Login for College Form")
                 return Response({'status':'OTP sent successfully.'},status = status.HTTP_200_OK)
-                # except:
-                #     return Response({'status':"Couldn't send otp."}, status = status.HTTP_405_METHOD_NOT_ALLOWED)
             else:
                 return Response({"status":"Please enter an email id"},status = status.HTTP_400_BAD_REQUEST)
 

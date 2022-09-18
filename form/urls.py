@@ -9,6 +9,8 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('form/<int:id>/', RegistrationFormView.as_view()),
 
+    path('form/', PostRegistrationView.as_view()),
+
     path('form/list/', RegistrationListView.as_view(), name='form-list'),
 
     # path(r'signup/(?P<email>[\w-]+)/', SignUPView.as_view(), name = 'signup'),
