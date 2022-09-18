@@ -12,6 +12,8 @@ import time
 from django.http import Http404
 from django.contrib.auth.hashers import check_password
 from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import redirect
+from django.urls import reverse
 
 
 
@@ -47,12 +49,12 @@ def send_login_mail(email, subject):
     
     return "Email Sent"
 
-class SignUPView(generics.CreateAPIView):
-    permission_classes = [AllowAny]
-    model = User
-    serializer_class = UserSerializer
-    def post(self, request, *args, **kwargs):
-        return super().create(request, *args, **kwargs)
+# class SignUPView(generics.CreateAPIView):
+#     permission_classes = [AllowAny]
+#     model = User
+#     serializer_class = UserSerializer
+#     def post(self, request, *args, **kwargs):
+#         return super().create(request, *args, **kwargs)
 
 class PasswordResetOTP(generics.GenericAPIView):
     permission_classes = [AllowAny]
@@ -177,8 +179,12 @@ class SignUpOTP(generics.GenericAPIView):
             else:
                 return Response({"status":"Please enter an email id"},status = status.HTTP_400_BAD_REQUEST)
 
-class SignUpOTPVerification(generics.GenericAPIView):
+class SignUpOTPVerification(generics.GenericAPIView,
+                            mixins.CreateModelMixin):
     permission_classes = [AllowAny]
+    model = User
+    serializer_class = UserSerializer
+
     def post(self, request):
 
         request_otp   = request.data.get("otp",)
@@ -200,7 +206,7 @@ class SignUpOTPVerification(generics.GenericAPIView):
 
         if str(request_otp) == str(otp) and request_email == email:
             OTP.objects.filter(otp_email__iexact = request_email).delete()
-            return Response({"status": "Email Verified."}, status=status.HTTP_200_OK)
+            return super().create(request)
         else:
             return Response({
                 'status':'OTP incorrect.'

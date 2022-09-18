@@ -11,7 +11,7 @@ urlpatterns = [
 
     path('form/list/', RegistrationListView.as_view(), name='form-list'),
 
-    path('signup/', SignUPView.as_view()),
+    # path(r'signup/(?P<email>[\w-]+)/', SignUPView.as_view(), name = 'signup'),
 
     path('signup/verify/', SignUpOTPVerification.as_view(), name = 'signupverification'),
 
