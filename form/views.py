@@ -156,7 +156,9 @@ class PostRegistrationView(generics.CreateAPIView):
     serializer_class = RegistrationSerializer
 
     def post(self, request, *args, **kwargs):
-        request.data.update({"user":request.user.id})
+        request.data._mutable = True
+        request.data['user'] = request.user.id
+        request.data._mutable = False
         return super().create(request, *args, **kwargs)
 
 class RegistrationListView(generics.ListAPIView):
