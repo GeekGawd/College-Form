@@ -155,6 +155,10 @@ class PostRegistrationView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
 
+    def post(self, request, *args, **kwargs):
+        request.data.update({"user":request.user.id})
+        return super().create(request, *args, **kwargs)
+
 class RegistrationListView(generics.ListAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
