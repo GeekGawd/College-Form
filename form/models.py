@@ -62,7 +62,7 @@ class OTP(models.Model):
 
 
 DEPARTMENTS = [
-                ("  ", "Applied Sciences & Humanities"),
+                ("Applied Sciences & Humanities", "Applied Sciences & Humanities"),
                 ("Electronics And Communication Engineering", "Electronics And Communication Engineering"),
                 ("Mechanical Engineering", "Mechanical Engineering"),
                 ("Civil Engineering", "Civil Engineering"),
