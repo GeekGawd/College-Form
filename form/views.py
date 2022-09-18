@@ -136,7 +136,7 @@ class RegistrationFormView(
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
     def get_object(self):
-        form_id = self.request.data['id']
+        form_id = self.kwargs['id']
         return Registration.objects.get(id=form_id, user = self.request.user)
     
     def get(self, request, *args, **kwargs):

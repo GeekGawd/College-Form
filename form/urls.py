@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import (
 )
 
 urlpatterns = [
-    path('form/', RegistrationFormView.as_view()),
+    path('form/<int:id>/', RegistrationFormView.as_view()),
 
     path('form/list/', RegistrationListView.as_view(), name='form-list'),
 
