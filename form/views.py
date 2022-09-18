@@ -11,6 +11,7 @@ from django.core.mail import EmailMessage
 import time
 from django.http import Http404
 from django.contrib.auth.hashers import check_password
+from django.core.exceptions import ObjectDoesNotExist
 
 
 
@@ -20,7 +21,7 @@ def send_otp_email(email,subject):
     
     OTP.objects.filter(otp_email__iexact = email).delete()
 
-    otp = random.randint(100000,999999)
+    otp = random.randint(1000,9999)
 
     msg = EmailMessage(subject, f'<div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2"><div style="margin:50px auto;width:70%;padding:20px 0"><div style="border-bottom:1px solid #eee"><a href="" style="font-size:2em;color: #FFD243;text-decoration:none;font-weight:600">College Form</a></div><p style="font-size:1.2em">Greetings,</p><p style="font-size:1.2em"> Looks like you forgot your password. No worries we are here to help you recover your account. Use the following OTP to recover your account<br><b style="text-align: center;display: block;">Note: OTP is only valid for 5 minutes.</b></p><h2 style="font-size: 1.9em;background: #FFD243;margin: 0 auto;width: max-content;padding: 0 15px;color: #fff;border-radius: 4px;">{otp}</h2><p style="font-size:1.2em;">Regards,<br/>Team Software Incubator</p><hr style="border:none;border-top:1px solid #eee" /><div style="float:right;padding:8px 0;color:#aaa;font-size:1.2em;line-height:1;font-weight:500"><p>College Form</p><p> 3rd Floor CSIT Block, AKGEC</p><p>Ghaziabad</p></div></div></div>' , 'collegeform.contact@gmail.com', (email,))
     msg.content_subtype = "html"
@@ -35,7 +36,7 @@ def send_login_mail(email, subject):
 
     OTP.objects.filter(otp_email__iexact = email).delete()
 
-    otp = random.randint(100000,999999)
+    otp = random.randint(1000,9999)
 
     msg = EmailMessage(subject, f'<div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2"><div style="margin:50px auto;width:70%;padding:20px 0"><div style="border-bottom:1px solid #eee"><a href="" style="font-size:2em;color: #FFD243;text-decoration:none;font-weight:600">College Form</a></div><p style="font-size:1.2em">Greetings,</p><p style="font-size:1.2em"> Use the following OTP to complete your Sign Up procedures<br><b style="text-align: center;display: block;">Note: OTP is only valid for 5 minutes.</b></p><h2 style="font-size: 1.9em;background: #FFD243;margin: 0 auto;width: max-content;padding: 0 15px;color: #fff;border-radius: 4px;">{otp}</h2><p style="font-size:1.2em;">Regards,<br/>Team Software Incubator</p><hr style="border:none;border-top:1px solid #eee" /><div style="float:right;padding:8px 0;color:#aaa;font-size:1.2em;line-height:1;font-weight:500"><p>Connect</p><p>3rd Floor CSIT Block, AKGEC</p><p>Ghaziabad</p></div></div></div>', 'collegeform.contact@gmail.com', (email,))
     msg.content_subtype = "html"
@@ -133,11 +134,14 @@ class RegistrationFormView(
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
     def get_object(self):
-        user = self.request.user
-        return Registration.objects.get(user=user)
+        form_id = self.request.data['id']
+        return Registration.objects.get(id=form_id, user = self.request.user)
     
     def get(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
+        try:
+            return super().retrieve(request, *args, **kwargs)
+        except ObjectDoesNotExist:
+            return Response({"status": "No Form Found"}, status=status.HTTP_404_NOT_FOUND)
     
     def post(self, request, *args, **kwargs):
         request.data.update({"user":request.user.id})
