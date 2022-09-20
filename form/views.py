@@ -145,6 +145,9 @@ class RegistrationFormView(
             return Response({"status": "No Form Found"}, status=status.HTTP_404_NOT_FOUND)
     
     def patch(self, request, *args, **kwargs):
+        request.data._mutable = True
+        request.data['user'] = request.user.id
+        request.data._mutable = False
         return super().update(request, *args, **kwargs)
     
     def delete(self, request, *args, **kwargs):
