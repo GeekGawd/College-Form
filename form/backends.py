@@ -31,3 +31,29 @@ class JWTAuthentication(authentication.BaseAuthentication):
 
         except jwt.exceptions.DecodeError as e:
             raise AuthenticationFailed('Invalid Token')
+
+class AdminAuthentication(authentication.BaseAuthentication):
+
+    def authenticate(self, request):
+        auth_data = authentication.get_authorization_header(request)
+        if not auth_data:
+            return None
+        
+        prefix, token = auth_data.decode('utf-8').split(' ')
+
+        try:
+            payload = jwt.decode(jwt=token, key=settings.SECRET_KEY, algorithms=['HS256'])
+            try:
+                user = User.objects.get(id=payload["user_id"])
+            except:
+                raise AuthenticationFailed('Invalid Token')
+
+            if not user.is_superuser:
+                raise AuthenticationFailed('Not Admin User')
+            return (user, token)
+            
+        except jwt.ExpiredSignatureError as e:
+            raise NotAcceptable("Token has Expired")
+
+        except jwt.exceptions.DecodeError as e:
+            raise AuthenticationFailed('Invalid Token')

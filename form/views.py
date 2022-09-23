@@ -2,8 +2,9 @@ from urllib import request
 from django.shortcuts import render
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
-from form.models import Registration, User
-from form.serializers import RegistrationSerializer, UserSerializer, ChangePasswordSerializer
+from form.backends import AdminAuthentication
+from form.models import Registration, User, StudentForm
+from form.serializers import RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from form.models import OTP
 import random
@@ -12,8 +13,7 @@ import time
 from django.http import Http404
 from django.contrib.auth.hashers import check_password
 from django.core.exceptions import ObjectDoesNotExist
-from django.shortcuts import redirect
-from django.urls import reverse
+
 
 
 
@@ -217,3 +217,36 @@ class SignUpOTPVerification(generics.GenericAPIView,
             return Response({
                 'status':'OTP incorrect.'
             }, status=status.HTTP_400_BAD_REQUEST)
+
+class StudentFormView(generics.GenericAPIView,
+                  mixins.RetrieveModelMixin,
+                  mixins.CreateModelMixin,
+                  mixins.DestroyModelMixin,
+                  mixins.UpdateModelMixin):
+    serializer_class = StudentFormSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [AdminAuthentication]
+
+    def get_object(self):
+        form_id = self.kwargs['id']
+        return StudentForm.objects.get(id=form_id)
+
+    def get(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+    
+    def post(self, request, *args, **kwargs):
+        request.data.update({"user": request.user.id})
+        return super().create(request, *args, **kwargs)
+    
+    def delete(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
+    
+    def patch(self, request, *args, **kwargs):
+        request.data.update({"user": request.user.id})
+        return super().update(request, *args, **kwargs)
+
+class StudentFormListView(generics.ListAPIView):
+    queryset = StudentForm.objects.all()
+    serializer_class = StudentFormSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [AdminAuthentication]

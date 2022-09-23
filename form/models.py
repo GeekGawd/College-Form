@@ -145,3 +145,17 @@ class Registration(models.Model):
         choices=INCENTIVE_DETAILS
     )
     remarks = models.TextField()
+
+class StudentForm(models.Model):
+    name = models.CharField(max_length=255)
+    branch = models.CharField(max_length=255)
+    year = models.CharField(max_length=25)
+    section = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=10,
+                                    validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
+    name_of_activity = models.CharField(max_length=255)
+    venue_of_activity = models.CharField(max_length=255)
+    number_of_days = models.PositiveBigIntegerField()
+    starting_date = models.CharField(max_length=15)
+    end_date = models.CharField(max_length=15)
+    remarks = models.TextField()
