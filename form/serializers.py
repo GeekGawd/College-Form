@@ -3,6 +3,8 @@ from form.models import Registration, User, StudentForm
 from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 import re, itertools
+from django.contrib.auth import authenticate
+
 
 
 class RegistrationSerializer(serializers.ModelSerializer):
@@ -88,3 +90,37 @@ class StudentFormSerializer(serializers.ModelSerializer):
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
+
+class AuthTokenSerializer(serializers.ModelSerializer):
+    email = serializers.CharField(required=True, error_messages={
+                                  "required": "Email field may not be blank."}, write_only=True)
+    password = serializers.CharField(write_only=True, min_length=5)
+
+    class Meta:
+        model = User
+        fields = ['email', 'access', 'refresh', 'password', 'is_admin']
+
+    # def to_representation(self, instance):
+    #     data = super().to_representation(instance)
+    #     data['is_admin'] = instance.is_superuser
+    #     return data
+
+    def validate(self, attrs):
+        email = attrs.get('email')
+        password = attrs.get('password')
+
+        user = authenticate(
+            request=self.context.get('request'),
+            username=email,
+            password=password
+        )
+
+        if not user:
+            raise ValidationError(
+                'Unable to authenticate with provided credentials')
+
+        return {
+            'refresh': user.refresh,
+            'access': user.access,
+            'is_admin': user.is_superuser
+        } 

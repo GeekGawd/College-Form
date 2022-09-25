@@ -50,6 +50,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def get_name(self):
         return str(self.name)
+    
+    def is_admin(self):
+        return self.is_superuser
 
 
 class OTP(models.Model):

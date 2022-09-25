@@ -4,7 +4,7 @@ from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
 from form.backends import AdminAuthentication
 from form.models import Registration, User, StudentForm
-from form.serializers import RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
+from form.serializers import AuthTokenSerializer, RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from form.models import OTP
 import random
@@ -269,3 +269,17 @@ class ImportStudentData(generics.GenericAPIView):
             return Response({"status": "Student Data Imported Successfully"})
         return Response({"status": "Not Imported Student Data"}, status=status.HTTP_400_BAD_REQUEST)
         
+class LoginAPIView(generics.GenericAPIView):
+    serializer_class = AuthTokenSerializer
+    permission_classes = [AllowAny]
+    
+    def post(self, request, *args, **kwargs):
+        request_email = request.data.get('email',)
+        try:
+            user1 = User.objects.get(email__iexact = request_email)
+        except:
+            return Response({'status':'User not registered'}, status=status.HTTP_401_UNAUTHORIZED)
+
+        serializer = AuthTokenSerializer(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
