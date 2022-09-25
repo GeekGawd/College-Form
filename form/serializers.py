@@ -17,7 +17,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
         return super().create(validated_data)
 
     def get_is_admin(self, instance):
-        return self.request.user.is_superuser
+        request = self.context['request']
+        return request.user.is_superuser
 
 class UserSerializer(serializers.ModelSerializer):
 
