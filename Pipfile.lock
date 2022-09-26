@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "56d8717ba6f5288c063d83aa1f41aa95e3b61b9c9d0b8708cf3114df33745592"
+            "sha256": "96f95a486e38340a326ba0c165e738b48c8a89ea59d63da9c1923a8f6b3ac37c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -325,7 +325,9 @@
             "version": "==0.4.3"
         },
         "tablib": {
-            "extras": [],
+            "extras": [
+                "pandas"
+            ],
             "hashes": [
                 "sha256:870d7e688f738531a14937a055e8bba404fbc388e77d4d500b2c904075d1019c",
                 "sha256:a57f2770b8c225febec1cb1e65012a69cf30dd28be810e0ff98d024768c7d0f1"

@@ -17,7 +17,7 @@ boto3 = "*"
 pandas = "*"
 openpyxl = "*"
 django-import-export = "*"
-tablib = "*"
+tablib = {extras = ["pandas"], version = "*"}
 
 [dev-packages]
 

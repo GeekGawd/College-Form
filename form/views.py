@@ -261,8 +261,9 @@ class ImportStudentData(generics.GenericAPIView):
 
     def post(self, request):
         file = request.FILES['excel']
+        df = pd.read_excel(file)
         studentform_resource = resources.modelresource_factory(model=StudentForm)()
-        dataset = Dataset().load(file.read())
+        dataset = Dataset().load(df)
         result = studentform_resource.import_data(dataset, dry_run=True)
         if not result.has_errors():
             result = studentform_resource.import_data(dataset, dry_run=False)
