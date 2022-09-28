@@ -1,4 +1,4 @@
-from urllib import request
+from rest_framework import filters
 from django.shortcuts import render
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
@@ -16,7 +16,7 @@ from django.core.exceptions import ObjectDoesNotExist
 import pandas as pd
 from tablib import Dataset
 from import_export import resources
-
+from datetime import datetime
 
 
 # Create your views here.
@@ -248,10 +248,33 @@ class StudentFormView(generics.GenericAPIView,
         return super().update(request, *args, **kwargs)
 
 class StudentFormListView(generics.ListAPIView):
-    queryset = StudentForm.objects.all()
     serializer_class = StudentFormSerializer
     permission_classes = [IsAuthenticated]
     authentication_classes = [AdminAuthentication]
+
+    def get_queryset(self):
+        email = self.request.data.get('email', None)
+        start_date = self.request.data.get('starting_date', None)
+        end_date = self.request.data.get('end_date', None)
+
+        q = StudentForm.objects.all()
+
+        if email is not None:
+            q = q.filter(email=email)
+        
+        if start_date is not None:
+            start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+            q = q.filter(starting_date__gte=start_date)
+        
+        if end_date is not None:
+            end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+            q = q.filter(end_date__lte=end_date)
+        
+        return q
+        
+
+    def post(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
 
 class ImportStudentData(generics.GenericAPIView):
     parser_classes = [parsers.MultiPartParser]

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'form',
     'rest_framework_simplejwt',
     'corsheaders',
+    'django_filters',
 ]
 
 
@@ -200,3 +201,7 @@ CORS_ALLOW_METHODS = [
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', "https://*.azurewebsites.net/", "https://college-form.azurewebsites.net"]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+from django.conf.locale.es import formats as es_formats
+
+es_formats.DATE_FORMAT = 'd-m-y'
