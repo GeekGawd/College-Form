@@ -3,8 +3,8 @@ from django.shortcuts import render
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
 from form.backends import AdminAuthentication
-from form.models import Registration, User, StudentForm
-from form.serializers import AuthTokenSerializer, RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
+from form.models import Registration, User, StudentForm, FacultyParticipationForm
+from form.serializers import AuthTokenSerializer, FacultyParticipationFormSerializer, RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from form.models import OTP
 import random
@@ -307,3 +307,59 @@ class LoginAPIView(generics.GenericAPIView):
         serializer = AuthTokenSerializer(data=request.data, context={'request': request})
         serializer.is_valid(raise_exception=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+class FacultyParticipationFormView(generics.GenericAPIView,
+                  mixins.RetrieveModelMixin,
+                  mixins.CreateModelMixin,
+                  mixins.DestroyModelMixin,
+                  mixins.UpdateModelMixin):
+    serializer_class = FacultyParticipationFormSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [AdminAuthentication]
+
+    def get_object(self):
+        form_id = self.kwargs['id']
+        return StudentForm.objects.get(id=form_id)
+
+    def get(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+    
+    def post(self, request, *args, **kwargs):
+        request.data.update({"user": request.user.id})
+        return super().create(request, *args, **kwargs)
+    
+    def delete(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
+    
+    def patch(self, request, *args, **kwargs):
+        request.data.update({"user": request.user.id})
+        return super().update(request, *args, **kwargs)
+
+class FacultyParticipationFormListView(generics.ListAPIView):
+    serializer_class = FacultyParticipationFormSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [AdminAuthentication]
+
+    def get_queryset(self):
+        email = self.request.data.get('email', None)
+        start_date = self.request.data.get('starting_date', None)
+        end_date = self.request.data.get('end_date', None)
+
+        q = FacultyParticipationForm.objects.all()
+
+        if email is not None:
+            q = q.filter(email=email)
+        
+        if start_date is not None:
+            start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+            q = q.filter(starting_date__gte=start_date)
+        
+        if end_date is not None:
+            end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+            q = q.filter(end_date__lte=end_date)
+        
+        return q
+        
+
+    def post(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)

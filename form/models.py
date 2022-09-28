@@ -163,3 +163,17 @@ class StudentForm(models.Model):
     starting_date = models.DateField()
     end_date = models.DateField()
     remarks = models.TextField()
+
+class FacultyParticipationForm(models.Model):
+    email = models.EmailField(primary_key = True)
+    name = models.CharField(max_length=255)
+    department = models.CharField(max_length=255)
+    role = models.CharField(max_length=255)
+    phone_number = models.CharField(max_length=10,
+                                    validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
+    name_of_event = models.CharField(max_length=255)
+    venue_of_activity = models.CharField(max_length=255)
+    duration = models.PositiveBigIntegerField()
+    starting_date = models.DateField()
+    end_date = models.DateField()
+    remarks = models.TextField()

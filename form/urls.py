@@ -37,4 +37,10 @@ urlpatterns = [
 
     path('student/import/', ImportStudentData.as_view(), name='StudentForm-list-view'),
 
+    path('faculty-form/', FacultyParticipationFormView.as_view(), name='FacultyForm-view'),
+
+    path('faculty-form/<int:id>/', FacultyParticipationFormView.as_view(), name='FacultyForm-view'),
+
+    path('faculty-form/list/', FacultyParticipationFormListView.as_view(), name='FacultyForm-list-view'),
+
 ]

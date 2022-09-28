@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from form.models import Registration, User, StudentForm
+from form.models import FacultyParticipationForm, Registration, User, StudentForm
 from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 import re, itertools
@@ -86,6 +86,16 @@ class StudentFormSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
     class Meta:
         model = StudentForm
+        fields = '__all__'
+    
+    def get_is_admin(self, instance):
+        request = self.context['request']
+        return request.user.is_superuser
+
+class FacultyParticipationFormSerializer(serializers.ModelSerializer):
+    is_admin = serializers.SerializerMethodField()
+    class Meta:
+        model = FacultyParticipationForm
         fields = '__all__'
     
     def get_is_admin(self, instance):
