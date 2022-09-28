@@ -39,7 +39,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         email = validated_data['email']
-        password = ["".join(x) for _, x in itertools.groupby(email, key=str.isdigit)][0] + "@1234"
+        password = email.split('@akgec.ac.in')[0] + "@1234"
         user = User(**validated_data)
         user.set_password(password)
         user.is_active = True
