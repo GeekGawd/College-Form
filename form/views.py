@@ -185,7 +185,7 @@ class RegistrationListView(generics.GenericAPIView,
 
 
             if email is not None:
-                q = q.filter(email=email)
+                q = q.filter(college_email=email)
             
             if department is not None:
                 q = q.filter(department = department)

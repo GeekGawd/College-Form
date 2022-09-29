@@ -147,7 +147,7 @@ class Registration(models.Model):
     remarks = models.TextField()
 
 class StudentForm(models.Model):
-    email = models.EmailField(primary_key = True)
+    email = models.EmailField()
     name = models.CharField(max_length=255)
     branch = models.CharField(max_length=255)
     year = models.CharField(max_length=25)
@@ -162,7 +162,7 @@ class StudentForm(models.Model):
     remarks = models.TextField()
 
 class FacultyParticipationForm(models.Model):
-    email = models.EmailField(primary_key = True)
+    email = models.EmailField()
     name = models.CharField(max_length=255)
     department = models.CharField(max_length=255)
     role = models.CharField(max_length=255)
