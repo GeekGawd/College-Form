@@ -365,7 +365,7 @@ class FacultyParticipationFormView(generics.GenericAPIView,
 
     def get_object(self):
         form_id = self.kwargs['id']
-        return StudentForm.objects.get(id=form_id)
+        return FacultyParticipationForm.objects.get(id=form_id)
 
     def get(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
