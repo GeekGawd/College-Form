@@ -116,10 +116,7 @@ class Registration(models.Model):
     phone_number = models.CharField(max_length=10,
                                     validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
     name = models.CharField(max_length=250)
-    department = models.CharField(
-        max_length=100, 
-        choices=DEPARTMENTS
-    )
+    department = models.CharField(max_length=255)
     designation = models.CharField(max_length=100)
     fdp_type = models.CharField(
         max_length=50,

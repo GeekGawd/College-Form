@@ -171,7 +171,45 @@ class RegistrationListView(generics.ListAPIView):
     serializer_class = RegistrationSerializer
 
     def get_queryset(self):
-        return Registration.objects.filter(user=self.request.user)
+        q = Registration.objects.all()
+
+        if self.request.user.is_superuser:
+            email = self.request.data.get('email', None)
+            start_date = self.request.data.get('start_date', None)
+            end_date = self.request.data.get('end_date', None)
+            department = self.request.data.get('department', None)
+            fdp_type = self.request.data.get('fdp_type', None)
+            incentive_details = self.request.data.get('incentive_details', None)
+            venue = self.request.data.get('venue', None)
+
+
+            if email is not None:
+                q = q.filter(email=email)
+            
+            if department is not None:
+                q = q.filter(department = department)
+            
+            if venue is not None:
+                q = q.filter(venue = venue)
+
+            if fdp_type is not None:
+                q = q.filter(fdp_type = fdp_type)
+            
+            if incentive_details is not None:
+                q = q.filter(incentive_details = incentive_details)
+            
+            if start_date is not None:
+                start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+                q = q.filter(starting_date__gte=start_date)
+            
+            if end_date is not None:
+                end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+                q = q.filter(end_date__lte=end_date)
+                
+        else:
+            q = q.filter(user=self.request.user)
+        
+        return q
 
 class SignUpOTP(generics.GenericAPIView):
     permission_classes = [AllowAny]
@@ -194,7 +232,6 @@ class SignUpOTPVerification(generics.GenericAPIView,
     serializer_class = UserSerializer
 
     def post(self, request):
-
         request_otp   = request.data.get("otp",)
         request_email = request.data.get("email")
         if request_email:
@@ -254,13 +291,17 @@ class StudentFormListView(generics.ListAPIView):
 
     def get_queryset(self):
         email = self.request.data.get('email', None)
-        start_date = self.request.data.get('starting_date', None)
+        start_date = self.request.data.get('start_date', None)
         end_date = self.request.data.get('end_date', None)
+        branch = self.request.data.get('branch', None)
 
         q = StudentForm.objects.all()
 
         if email is not None:
             q = q.filter(email=email)
+        
+        if branch is not None:
+            q = q.filter(branch=branch)
         
         if start_date is not None:
             start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
@@ -342,13 +383,17 @@ class FacultyParticipationFormListView(generics.ListAPIView):
 
     def get_queryset(self):
         email = self.request.data.get('email', None)
-        start_date = self.request.data.get('starting_date', None)
+        start_date = self.request.data.get('start_date', None)
         end_date = self.request.data.get('end_date', None)
+        department = self.request.data.get('department', None)
 
         q = FacultyParticipationForm.objects.all()
 
         if email is not None:
             q = q.filter(email=email)
+        
+        if department is not None:
+            q = q.filter(department=department)
         
         if start_date is not None:
             start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
