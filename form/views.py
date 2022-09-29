@@ -166,7 +166,8 @@ class PostRegistrationView(generics.CreateAPIView):
         request.data._mutable = False
         return super().create(request, *args, **kwargs)
 
-class RegistrationListView(generics.ListAPIView):
+class RegistrationListView(generics.GenericAPIView,
+                            mixins.ListModelMixin):
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
 
@@ -210,6 +211,9 @@ class RegistrationListView(generics.ListAPIView):
             q = q.filter(user=self.request.user)
         
         return q
+    
+    def post(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
 
 class SignUpOTP(generics.GenericAPIView):
     permission_classes = [AllowAny]
@@ -284,7 +288,8 @@ class StudentFormView(generics.GenericAPIView,
         request.data.update({"user": request.user.id})
         return super().update(request, *args, **kwargs)
 
-class StudentFormListView(generics.ListAPIView):
+class StudentFormListView(generics.GenericAPIView,
+                        mixins.ListModelMixin):
     serializer_class = StudentFormSerializer
     permission_classes = [IsAuthenticated]
     authentication_classes = [AdminAuthentication]
@@ -376,7 +381,8 @@ class FacultyParticipationFormView(generics.GenericAPIView,
         request.data.update({"user": request.user.id})
         return super().update(request, *args, **kwargs)
 
-class FacultyParticipationFormListView(generics.ListAPIView):
+class FacultyParticipationFormListView(generics.GenericAPIView,
+                                        mixins.ListModelMixin):
     serializer_class = FacultyParticipationFormSerializer
     permission_classes = [IsAuthenticated]
     authentication_classes = [AdminAuthentication]
