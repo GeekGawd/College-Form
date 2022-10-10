@@ -4,7 +4,7 @@ from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
 from form.backends import AdminAuthentication
 from form.models import Registration, User, StudentForm, FacultyParticipationForm
-from form.serializers import AuthTokenSerializer, FacultyParticipationFormSerializer, RegistrationSerializer, StudentFormSerializer, UserSerializer, ChangePasswordSerializer
+from form.serializers import AuthTokenSerializer, FacultyParticipationFormSerializer, RegistrationSerializer, StudentFormSerializer, UserDetailSerializer, UserSerializer, ChangePasswordSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from form.models import OTP
 import random
@@ -155,7 +155,8 @@ class RegistrationFormView(
     def delete(self, request, *args, **kwargs):
         return super().destroy(request, *args, **kwargs)
 
-class PostRegistrationView(generics.CreateAPIView):
+class PostRegistrationView(generics.GenericAPIView,
+                           mixins.CreateModelMixin):
     parser_classes = [parsers.MultiPartParser, parsers.FormParser, parsers.JSONParser]
     permission_classes = [IsAuthenticated]
     serializer_class = RegistrationSerializer
@@ -165,6 +166,10 @@ class PostRegistrationView(generics.CreateAPIView):
         request.data['user'] = request.user.id
         request.data._mutable = False
         return super().create(request, *args, **kwargs)
+    
+    def get(self, request, *args, **kwargs):
+        data = UserDetailSerializer(request.user).data
+        return Response(data)
 
 class RegistrationListView(generics.GenericAPIView,
                             mixins.ListModelMixin):

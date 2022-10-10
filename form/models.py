@@ -25,6 +25,12 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
+    college_email = models.EmailField(null=True, blank=True)
+    phone_number = models.CharField(max_length=10,
+                                    validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null=True, blank=True)
+    name = models.CharField(max_length=250, null=True, blank=True)
+    department = models.CharField(max_length=255, null=True, blank=True)
+    designation = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=255, unique=True)
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
@@ -88,12 +94,12 @@ INCENTIVE_DETAILS = [
 ]
 
 FACE_TO_FACE_FDP = [
-    ("AKTU Level-1 (UHV-II)", "AKTU Level-1 (UHV-II)"),
+    ("AKTU Level-1", "AKTU Level-1"),
     ("AKTU Refresher", "AKTU Refresher"),
-    ("AKTU Level-2 (UHV-III)", "AKTU Level-2 (UHV-III)"),
-    ("AKTU Level-3 (UHV-III)", "AKTU Level-3 (UHV-III)"),
-    ("AKTU 10 days FDP on UHBC (UHV-III)", "AKTU 10 days FDP on UHBC (UHV-III)"),
-    ("AKTU 10 days FDP on VREHC (UHV-III)", "AKTU 10 days FDP on VREHC (UHV-III)"),
+    ("AKTU Level-2", "AKTU Level-2"),
+    ("AKTU Level-3", "AKTU Level-3"),
+    ("AKTU 10 days FDP on UHBC", "AKTU 10 days FDP on UHBC"),
+    ("AKTU 10 days FDP on VREHC", "AKTU 10 days FDP on VREHC"),
     ("AKTU 10 days FDP on HVMD", "AKTU 10 days FDP on HVMD"),
     ("AICTE UHV-II", "AICTE UHV-II"),
     ("AICTE UHV-III", "AICTE UHV-III"),

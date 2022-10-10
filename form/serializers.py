@@ -1,3 +1,4 @@
+from dataclasses import field
 from rest_framework import serializers
 from form.models import FacultyParticipationForm, Registration, User, StudentForm
 from django.core.mail import EmailMessage
@@ -14,6 +15,13 @@ class RegistrationSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def create(self, validated_data):
+        user = self.context['request'].user
+        user.college_email = validated_data['college_email']
+        user.phone_number = validated_data['phone_number']
+        user.name = validated_data['name']
+        user.department = validated_data['department']
+        user.designation = validated_data['designation']
+        user.save()
         return super().create(validated_data)
 
     def get_is_admin(self, instance):
@@ -135,3 +143,9 @@ class AuthTokenSerializer(serializers.ModelSerializer):
             'access': user.access,
             'is_admin': user.is_superuser
         } 
+
+class UserDetailSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ['college_email', 'phone_number', 'name', 'department', 'designation']
