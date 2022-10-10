@@ -152,6 +152,11 @@ class Registration(models.Model):
     )
     remarks = models.TextField()
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name','department','college_email','phone_number','starting_date','end_date','certificate_number','incentive_detail','venue'], name='unique registration')
+        ]
+
 class StudentForm(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=255)
