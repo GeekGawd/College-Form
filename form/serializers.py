@@ -10,6 +10,8 @@ from django.contrib.auth import authenticate
 
 class RegistrationSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
+    starting_date = serializers.SerializerMethodField()
+    end_date = serializers.SerializerMethodField()
     class Meta:
         model = Registration
         fields = '__all__'
@@ -27,6 +29,12 @@ class RegistrationSerializer(serializers.ModelSerializer):
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
+    
+    def get_starting_date(self, instance):
+        return instance.starting_date.strftime('%d-%m-%Y')
+    
+    def get_end_date(self, instance):
+        return instance.end_date.strftime('%d-%m-%Y')
 
 class UserSerializer(serializers.ModelSerializer):
 
@@ -92,6 +100,9 @@ class ChangePasswordSerializer(serializers.Serializer):
 
 class StudentFormSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
+    starting_date = serializers.SerializerMethodField()
+    end_date = serializers.SerializerMethodField()
+
     class Meta:
         model = StudentForm
         fields = '__all__'
@@ -99,6 +110,12 @@ class StudentFormSerializer(serializers.ModelSerializer):
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
+    
+    def get_starting_date(self, instance):
+        return instance.starting_date.strftime('%d-%m-%Y')
+    
+    def get_end_date(self, instance):
+        return instance.end_date.strftime('%d-%m-%Y')
 
 
 class FacultyParticipationFormSerializer(serializers.ModelSerializer):
