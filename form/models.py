@@ -107,7 +107,6 @@ FACE_TO_FACE_FDP = [
 ]
 
 ONLINE_FDP = [
-    ("AICTE-Five Days Introductory FDP", "AICTE-Five Days Introductory FDP"),
     ("AICTE-UHV Refresher Part-I", "AICTE-UHV Refresher Part-I"),
     ("AICTE-UHV Refresher Part-II", "AICTE-UHV Refresher Part-II"),
     ("AICTE-5 Day Online UHV-I", "AICTE-5 Day Online UHV-I"),
@@ -160,6 +159,8 @@ class Registration(models.Model):
 class StudentForm(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=255)
+    roll_no = models.CharField(max_length=15)
+    course = models.CharField(max_length=55)
     branch = models.CharField(max_length=255)
     year = models.CharField(max_length=25)
     section = models.CharField(max_length=255)
@@ -167,7 +168,7 @@ class StudentForm(models.Model):
                                     validators=[RegexValidator(regex='^[0-9]{10}$', message='Enter a 10 digit phone number.',),], null = True)
     name_of_activity = models.CharField(max_length=255)
     venue_of_activity = models.CharField(max_length=255)
-    number_of_days = models.PositiveBigIntegerField()
+    number_of_days = models.CharField(blank=True, null=True, max_length = 50)
     starting_date = models.DateField()
     end_date = models.DateField()
     remarks = models.TextField()

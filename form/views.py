@@ -336,9 +336,20 @@ class ImportStudentData(generics.GenericAPIView):
     def post(self, request):
         file = request.FILES['excel']
         df = pd.read_excel(file)
+        rename_columns = {"College Mail ID": "college_email", "Name": "name",\
+            "University Roll Number": "roll_no", "Course": "course", "Year":"year",\
+            "Branch Section": "branch", "Mobile Number": "phone_number",\
+            "Name of Activity": "name_of_activity", "Venue of Activity": "venue_of_activity",\
+            "Duration": "duration", "From": "starting_date", "To":"end_date", "Remarks": "remarks"}
+        df.rename(columns = rename_columns, inplace=True)
+
+        # Change the datetime format of starting and end date
+        df['starting_date'] = pd.to_datetime(df['starting_date']).dt.strftime('%Y-%m-%d')
+        df['end_date'] = pd.to_datetime(df['end_date']).dt.strftime('%Y-%m-%d')
+
         studentform_resource = resources.modelresource_factory(model=StudentForm)()
         dataset = Dataset().load(df)
-        result = studentform_resource.import_data(dataset, dry_run=True)
+        result = studentform_resource.import_data(dataset, dry_run=True, raise_errors = True)
         if not result.has_errors():
             result = studentform_resource.import_data(dataset, dry_run=False)
             return Response({"status": "Student Data Imported Successfully"})

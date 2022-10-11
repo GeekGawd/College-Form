@@ -100,6 +100,7 @@ class StudentFormSerializer(serializers.ModelSerializer):
         request = self.context['request']
         return request.user.is_superuser
 
+
 class FacultyParticipationFormSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
     class Meta:

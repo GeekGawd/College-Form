@@ -200,7 +200,7 @@ CORS_ALLOW_METHODS = [
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', "https://*.azurewebsites.net/", "https://college-form.azurewebsites.net"]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 from django.conf.locale.es import formats as es_formats
 
