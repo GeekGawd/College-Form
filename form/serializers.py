@@ -5,6 +5,7 @@ from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 import re, itertools
 from django.contrib.auth import authenticate
+from datetime import datetime
 
 
 
@@ -18,12 +19,15 @@ class RegistrationSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         user = self.context['request'].user
+        data = self.context['request'].data
         user.college_email = validated_data['college_email']
         user.phone_number = validated_data['phone_number']
         user.name = validated_data['name']
         user.department = validated_data['department']
         user.designation = validated_data['designation']
         user.save()
+        validated_data['starting_date'] = datetime.strptime(data['starting_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        validated_data['end_date'] = datetime.strptime(data['end_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
         return super().create(validated_data)
 
     def get_is_admin(self, instance):
@@ -31,10 +35,15 @@ class RegistrationSerializer(serializers.ModelSerializer):
         return request.user.is_superuser
     
     def get_starting_date(self, instance):
-        return instance.starting_date.strftime('%d-%m-%Y')
+        start_date = instance.starting_date
+        start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        return start_date
+
     
     def get_end_date(self, instance):
-        return instance.end_date.strftime('%d-%m-%Y')
+        end_date = instance.end_date
+        end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        return end_date
 
 class UserSerializer(serializers.ModelSerializer):
 

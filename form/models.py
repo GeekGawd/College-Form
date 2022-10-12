@@ -139,8 +139,8 @@ class Registration(models.Model):
                                 blank=True,
                                 null=True
                                 )
-    starting_date = models.CharField(max_length=15)
-    end_date = models.CharField(max_length=15)
+    starting_date = models.DateField()
+    end_date = models.DateField()
     number_of_days = models.PositiveBigIntegerField()
     venue = models.CharField(max_length=250)
     certificate_number = models.CharField(max_length=250)
