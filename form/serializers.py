@@ -38,6 +38,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
         start_date = instance.starting_date
         if isinstance(start_date, str):
             start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            start_date = start_date.strftime("%d-%m-%Y")
         return start_date
 
     
@@ -45,6 +47,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
         end_date = instance.end_date
         if isinstance(end_date, str):
             end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            end_date = end_date.strftime("%d-%m-%Y")
         return end_date
 
 class UserSerializer(serializers.ModelSerializer):
@@ -117,27 +121,69 @@ class StudentFormSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentForm
         fields = '__all__'
+
+    def create(self, validated_data):
+        data = self.context['request'].data
+        validated_data['starting_date'] = datetime.strptime(data['starting_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        validated_data['end_date'] = datetime.strptime(data['end_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        return super().create(validated_data)
     
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
     
     def get_starting_date(self, instance):
-        return instance.starting_date.strftime('%d-%m-%Y')
+        start_date = instance.starting_date
+        if isinstance(start_date, str):
+            start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            start_date = start_date.strftime("%d-%m-%Y")
+        return start_date
+
     
     def get_end_date(self, instance):
-        return instance.end_date.strftime('%d-%m-%Y')
+        end_date = instance.end_date
+        if isinstance(end_date, str):
+            end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            end_date = end_date.strftime("%d-%m-%Y")
+        return end_date
 
 
 class FacultyParticipationFormSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
+    starting_date = serializers.SerializerMethodField()
+    end_date = serializers.SerializerMethodField()
     class Meta:
         model = FacultyParticipationForm
         fields = '__all__'
+
+    def create(self, validated_data):
+        data = self.context['request'].data
+        validated_data['starting_date'] = datetime.strptime(data['starting_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        validated_data['end_date'] = datetime.strptime(data['end_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        return super().create(validated_data)
     
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
+    
+    def get_starting_date(self, instance):
+        start_date = instance.starting_date
+        if isinstance(start_date, str):
+            start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            start_date = start_date.strftime("%d-%m-%Y")
+        return start_date
+
+    
+    def get_end_date(self, instance):
+        end_date = instance.end_date
+        if isinstance(end_date, str):
+            end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            end_date = end_date.strftime("%d-%m-%Y")
+        return end_date
 
 class AuthTokenSerializer(serializers.ModelSerializer):
     email = serializers.CharField(required=True, error_messages={
