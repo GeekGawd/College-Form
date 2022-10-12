@@ -36,13 +36,15 @@ class RegistrationSerializer(serializers.ModelSerializer):
     
     def get_starting_date(self, instance):
         start_date = instance.starting_date
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        if isinstance(start_date, str):
+            start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
         return start_date
 
     
     def get_end_date(self, instance):
         end_date = instance.end_date
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        if isinstance(end_date, str):
+            end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
         return end_date
 
 class UserSerializer(serializers.ModelSerializer):
