@@ -180,7 +180,7 @@ class RegistrationListView(generics.GenericAPIView,
         q = Registration.objects.all()
 
         if self.request.user.is_superuser:
-            email = self.request.data.get('email', None)
+            email = self.request.data.get('college_email', None)
             start_date = self.request.data.get('starting_date', None)
             end_date = self.request.data.get('end_date', None)
             department = self.request.data.get('department', None)
@@ -300,8 +300,8 @@ class StudentFormListView(generics.GenericAPIView,
     authentication_classes = [AdminAuthentication]
 
     def get_queryset(self):
-        email = self.request.data.get('email', None)
-        start_date = self.request.data.get('start_date', None)
+        email = self.request.data.get('college_email', None)
+        start_date = self.request.data.get('starting_date', None)
         end_date = self.request.data.get('end_date', None)
         branch = self.request.data.get('branch', None)
 
