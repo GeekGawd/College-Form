@@ -181,7 +181,7 @@ class RegistrationListView(generics.GenericAPIView,
 
         if self.request.user.is_superuser:
             email = self.request.data.get('email', None)
-            start_date = self.request.data.get('start_date', None)
+            start_date = self.request.data.get('starting_date', None)
             end_date = self.request.data.get('end_date', None)
             department = self.request.data.get('department', None)
             fdp_type = self.request.data.get('fdp_type', None)
