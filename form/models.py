@@ -144,7 +144,7 @@ class Registration(models.Model):
     number_of_days = models.CharField(max_length =50)
     venue = models.CharField(max_length=250)
     certificate_number = models.CharField(max_length=250)
-    certificate = models.FileField()
+    certificate = models.FileField(blank=True, null=True)
     incentive_detail = models.CharField(
         max_length=50,
         choices=INCENTIVE_DETAILS

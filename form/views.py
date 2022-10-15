@@ -405,7 +405,7 @@ class FacultyParticipationFormListView(generics.GenericAPIView,
 
     def get_queryset(self):
         email = self.request.data.get('email', None)
-        start_date = self.request.data.get('start_date', None)
+        start_date = self.request.data.get('starting_date', None)
         end_date = self.request.data.get('end_date', None)
         department = self.request.data.get('department', None)
 
