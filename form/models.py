@@ -149,7 +149,7 @@ class Registration(models.Model):
         max_length=50,
         choices=INCENTIVE_DETAILS
     )
-    remarks = models.TextField()
+    remarks = models.TextField(blank=True, null=True)
 
     class Meta:
         constraints = [

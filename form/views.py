@@ -185,7 +185,7 @@ class RegistrationListView(generics.GenericAPIView,
             end_date = self.request.data.get('end_date', None)
             department = self.request.data.get('department', None)
             fdp_type = self.request.data.get('fdp_type', None)
-            incentive_details = self.request.data.get('incentive_details', None)
+            incentive_detail = self.request.data.get('incentive_detail', None)
             venue = self.request.data.get('venue', None)
 
 
@@ -201,8 +201,8 @@ class RegistrationListView(generics.GenericAPIView,
             if fdp_type is not None:
                 q = q.filter(fdp_type = fdp_type)
             
-            if incentive_details is not None:
-                q = q.filter(incentive_details = incentive_details)
+            if incentive_detail is not None:
+                q = q.filter(incentive_detail = incentive_detail)
             
             if start_date is not None:
                 start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
@@ -300,7 +300,7 @@ class StudentFormListView(generics.GenericAPIView,
     authentication_classes = [AdminAuthentication]
 
     def get_queryset(self):
-        email = self.request.data.get('college_email', None)
+        email = self.request.data.get('email', None)
         start_date = self.request.data.get('starting_date', None)
         end_date = self.request.data.get('end_date', None)
         branch = self.request.data.get('branch', None)
