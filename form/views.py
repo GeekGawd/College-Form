@@ -185,6 +185,8 @@ class RegistrationListView(generics.GenericAPIView,
             end_date = self.request.data.get('end_date', None)
             department = self.request.data.get('department', None)
             fdp_type = self.request.data.get('fdp_type', None)
+            face_to_face_fdp = self.request.data.get('face_to_face_fdp', None)
+            online_fdp = self.request.data.get('online_fdp', None)
             incentive_detail = self.request.data.get('incentive_detail', None)
             venue = self.request.data.get('venue', None)
 
@@ -200,6 +202,12 @@ class RegistrationListView(generics.GenericAPIView,
 
             if fdp_type is not None:
                 q = q.filter(fdp_type = fdp_type)
+            
+            if face_to_face_fdp is not None:
+                q = q.filter(face_to_face_fdp = face_to_face_fdp)
+
+            if online_fdp is not None:
+                q = q.filter(online_fdp = online_fdp)
             
             if incentive_detail is not None:
                 q = q.filter(incentive_detail = incentive_detail)

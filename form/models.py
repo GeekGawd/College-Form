@@ -171,7 +171,7 @@ class StudentForm(models.Model):
     number_of_days = models.CharField(blank=True, null=True, max_length = 50)
     starting_date = models.DateField()
     end_date = models.DateField()
-    remarks = models.TextField()
+    remarks = models.TextField(blank=True, null=True)
 
 class FacultyParticipationForm(models.Model):
     email = models.EmailField()
@@ -185,4 +185,4 @@ class FacultyParticipationForm(models.Model):
     duration = models.CharField(max_length = 50)
     starting_date = models.DateField()
     end_date = models.DateField()
-    remarks = models.TextField()
+    remarks = models.TextField(blank=True, null=True)
