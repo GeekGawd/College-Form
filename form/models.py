@@ -1,7 +1,9 @@
+from dataclasses import fields
 from django.db import models
 from django.core.validators import RegexValidator
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager,PermissionsMixin
 from rest_framework_simplejwt.tokens import RefreshToken
+from import_export import resources
 # Create your models here.
 
 
@@ -172,6 +174,18 @@ class StudentForm(models.Model):
     starting_date = models.DateField()
     end_date = models.DateField()
     remarks = models.TextField(blank=True, null=True)
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name','email','roll_no','starting_date','end_date','venue_of_activity','name_of_activity'], name='unique student registration')
+        ]
+
+class StudentFormResource(resources.ModelResource):
+
+    class Meta:
+        model = StudentForm
+        import_id_fields = ["email","name", "roll_no", "name_of_activity", "venue_of_activity",\
+                     "starting_date", "end_date"]
+        skip_unchanged = True
 
 class FacultyParticipationForm(models.Model):
     email = models.EmailField()

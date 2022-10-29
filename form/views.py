@@ -17,7 +17,7 @@ import pandas as pd
 from tablib import Dataset
 from import_export import resources
 from datetime import datetime
-import numpy as np
+from form.models import StudentFormResource
 
 
 # Create your views here.
@@ -345,7 +345,7 @@ class ImportStudentData(generics.GenericAPIView):
     def post(self, request):
         file = request.FILES['excel']
         df = pd.read_excel(file)
-        rename_columns = {"College Mail ID": "college_email", "Name": "name",\
+        rename_columns = {"College Mail ID": "email", "Name": "name",\
             "University Roll Number": "roll_no", "Course": "course", "Year":"year",\
             "Branch Section": "branch", "Mobile Number": "phone_number",\
             "Name of Activity": "name_of_activity", "Venue of Activity": "venue_of_activity",\
@@ -359,7 +359,7 @@ class ImportStudentData(generics.GenericAPIView):
         df['phone_number'] = df['phone_number'].fillna(0)
         df['phone_number'] = df['phone_number'].astype('Int64')
 
-        studentform_resource = resources.modelresource_factory(model=StudentForm)()
+        studentform_resource = StudentFormResource()
         dataset = Dataset().load(df)
         result = studentform_resource.import_data(dataset, dry_run=True, raise_errors = True)
         if not result.has_errors():
