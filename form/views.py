@@ -17,6 +17,7 @@ import pandas as pd
 from tablib import Dataset
 from import_export import resources
 from datetime import datetime
+import numpy as np
 
 
 # Create your views here.
@@ -138,7 +139,7 @@ class RegistrationFormView(
     serializer_class = RegistrationSerializer
     def get_object(self):
         form_id = self.kwargs['id']
-        return Registration.objects.get(id=form_id, user = self.request.user)
+        return Registration.objects.get(id=form_id)
     
     def get(self, request, *args, **kwargs):
         try:
@@ -350,10 +351,13 @@ class ImportStudentData(generics.GenericAPIView):
             "Name of Activity": "name_of_activity", "Venue of Activity": "venue_of_activity",\
             "Duration": "duration", "From": "starting_date", "To":"end_date", "Remarks": "remarks"}
         df.rename(columns = rename_columns, inplace=True)
-
         # Change the datetime format of starting and end date
         df['starting_date'] = pd.to_datetime(df['starting_date']).dt.strftime('%Y-%m-%d')
         df['end_date'] = pd.to_datetime(df['end_date']).dt.strftime('%Y-%m-%d')
+
+        # Convert Phone Number from Decimal to Integer
+        df['phone_number'] = df['phone_number'].fillna(0)
+        df['phone_number'] = df['phone_number'].astype('Int64')
 
         studentform_resource = resources.modelresource_factory(model=StudentForm)()
         dataset = Dataset().load(df)
