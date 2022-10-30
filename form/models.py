@@ -1,9 +1,9 @@
-from dataclasses import fields
 from django.db import models
 from django.core.validators import RegexValidator
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager,PermissionsMixin
 from rest_framework_simplejwt.tokens import RefreshToken
 from import_export import resources
+from django.db.models import Q
 # Create your models here.
 
 

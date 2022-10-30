@@ -1,5 +1,3 @@
-from rest_framework import filters
-from django.shortcuts import render
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
 from form.backends import AdminAuthentication

@@ -60,6 +60,31 @@ class RegistrationSerializer(serializers.ModelSerializer):
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
+    
+    def validate_face_to_face_fdp(self, face_to_face_fdp):
+        request = self.context['request']
+        fdp_type = request.data.get('fdp_type', None)
+        online_fdp = request.data.get('online_fdp', None)
+
+        if fdp_type == "Face to Face FDP" and online_fdp != "" and online_fdp is not None:
+            raise serializers.ValidationError("FDP Name doesn't match with FDP Type")
+        
+        if fdp_type == "Face to Face FDP" and (face_to_face_fdp is None or face_to_face_fdp == ""):
+            raise serializers.ValidationError("Face to Face FDP Name cannot be Null")
+        return face_to_face_fdp
+
+    def validate_online_fdp(self, online_fdp):
+        request = self.context['request']
+        fdp_type = request.data.get('fdp_type', None)
+        face_to_face_fdp = request.data.get('face_to_face_fdp', None)
+
+        if fdp_type == "Online" and face_to_face_fdp is not None and face_to_face_fdp != "":
+            raise serializers.ValidationError("FDP Name doesn't match with FDP Type")
+        
+        if fdp_type == "Online" and (online_fdp is None or online_fdp == ""):
+            raise serializers.ValidationError("Online FDP Name cannot be Null")
+
+        return online_fdp
 
 class UserSerializer(serializers.ModelSerializer):
 
