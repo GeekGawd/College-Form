@@ -155,7 +155,7 @@ class Registration(models.Model):
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=['name','department','college_email','phone_number','starting_date','end_date','certificate_number','incentive_detail','venue'], name='unique registration')
+            models.UniqueConstraint(fields=['name','department','college_email','phone_number','starting_date','end_date'], name='unique registration')
         ]
 
 class StudentForm(models.Model):
