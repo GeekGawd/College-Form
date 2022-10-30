@@ -18,6 +18,8 @@ pandas = "*"
 openpyxl = "*"
 django-import-export = "*"
 tablib = {extras = ["pandas"], version = "*"}
+opencv-python = "*"
+matplotlib = "*"
 
 [dev-packages]
 

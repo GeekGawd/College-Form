@@ -8,11 +8,38 @@ from django.contrib.auth import authenticate
 from datetime import datetime
 
 
+class StartingDateField(serializers.Field):
+
+    def to_representation(self, start_date):
+        if isinstance(start_date, str):
+            start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            start_date = start_date.strftime("%d-%m-%Y")
+        return start_date
+
+    def to_internal_value(self, start_date):
+        start_date = datetime.strptime(start_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+        return start_date
+
+class EndDateField(serializers.Field):
+
+    def to_representation(self, end_date):
+        if isinstance(end_date, str):
+            end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
+        else:
+            end_date = end_date.strftime("%d-%m-%Y")
+        return end_date
+
+    def to_internal_value(self, end_date):
+        end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+        return end_date
+
 
 class RegistrationSerializer(serializers.ModelSerializer):
     is_admin = serializers.SerializerMethodField()
-    starting_date = serializers.SerializerMethodField()
-    end_date = serializers.SerializerMethodField()
+    starting_date = StartingDateField()
+    end_date = EndDateField()
+
     class Meta:
         model = Registration
         fields = '__all__'
@@ -33,23 +60,6 @@ class RegistrationSerializer(serializers.ModelSerializer):
     def get_is_admin(self, instance):
         request = self.context['request']
         return request.user.is_superuser
-    
-    def get_starting_date(self, instance):
-        start_date = instance.starting_date
-        if isinstance(start_date, str):
-            start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime("%d-%m-%Y")
-        else:
-            start_date = start_date.strftime("%d-%m-%Y")
-        return start_date
-
-    
-    def get_end_date(self, instance):
-        end_date = instance.end_date
-        if isinstance(end_date, str):
-            end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime("%d-%m-%Y")
-        else:
-            end_date = end_date.strftime("%d-%m-%Y")
-        return end_date
 
 class UserSerializer(serializers.ModelSerializer):
 
