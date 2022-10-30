@@ -189,10 +189,10 @@ class PostRegistrationView(generics.GenericAPIView,
         end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
 
         # Starting Date shouldn't lie between starting date and end date
-        flag1 = Registration.objects.filter(Q(starting_date__lte=starting_date) & Q(end_date__gte=starting_date)).exists()
+        flag1 = Registration.objects.filter(Q(starting_date__lte=starting_date) & Q(end_date__gte=starting_date) & Q(user=request.user)).exists()
         
         # Ending Date shoudln't lie between starting date and end date
-        flag2 = Registration.objects.filter(Q(starting_date__lte=end_date) & Q(end_date__gte=end_date)).exists()
+        flag2 = Registration.objects.filter(Q(starting_date__lte=end_date) & Q(end_date__gte=end_date) & Q(user=request.user)).exists()
 
         if flag1 or flag2:
             return Response({"status": "Duplicate Registration for Same Dates"}, status=status.HTTP_400_BAD_REQUEST)
