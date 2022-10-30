@@ -15,10 +15,9 @@ from django.contrib.auth.hashers import check_password
 from django.core.exceptions import ObjectDoesNotExist
 import pandas as pd
 from tablib import Dataset
-from import_export import resources
+from django.db.models import Q
 from datetime import datetime
 from form.models import StudentFormResource
-
 
 # Create your views here.
 
@@ -166,6 +165,22 @@ class PostRegistrationView(generics.GenericAPIView,
         request.data._mutable = True
         request.data['user'] = request.user.id
         request.data._mutable = False
+
+        starting_date = request.data.get('starting_date')
+        starting_date = datetime.strptime(starting_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+        
+        end_date = request.data.get('end_date')
+        end_date = datetime.strptime(end_date, "%d-%m-%Y").strftime('%Y-%m-%d')
+
+        # Starting Date shouldn't lie between starting date and end date
+        flag1 = Registration.objects.filter(Q(starting_date__lte=starting_date) & Q(end_date__gte=starting_date)).exists()
+        
+        # Ending Date shoudln't lie between starting date and end date
+        flag2 = Registration.objects.filter(Q(starting_date__lte=end_date) & Q(end_date__gte=end_date)).exists()
+
+        if flag1 or flag2:
+            return Response({"status": "Duplicate Registration for Same Dates"}, status=status.HTTP_400_BAD_REQUEST)
+
         return super().create(request, *args, **kwargs)
     
     def get(self, request, *args, **kwargs):
