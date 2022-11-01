@@ -5,6 +5,8 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('form/<int:id>/', RegistrationFormView.as_view()),
@@ -43,4 +45,4 @@ urlpatterns = [
 
     path('faculty-form/list/', FacultyParticipationFormListView.as_view(), name='FacultyForm-list-view'),
 
-]
+] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
