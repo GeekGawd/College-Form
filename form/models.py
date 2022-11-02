@@ -130,14 +130,12 @@ class Registration(models.Model):
         choices=FDP_TYPE
     )
     face_to_face_fdp = models.CharField(
-                                        max_length=200, 
-                                        choices=FACE_TO_FACE_FDP,
+                                        max_length=200,
                                         blank=True,
                                         null=True
                                         )
     online_fdp = models.CharField(
                                 max_length=200,
-                                choices=ONLINE_FDP,
                                 blank=True,
                                 null=True
                                 )
@@ -149,7 +147,6 @@ class Registration(models.Model):
     certificate = models.FileField(blank=True, null=True)
     incentive_detail = models.CharField(
         max_length=50,
-        choices=INCENTIVE_DETAILS
     )
     remarks = models.TextField(blank=True, null=True)
 
