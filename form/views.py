@@ -378,7 +378,7 @@ class ImportStudentData(generics.GenericAPIView):
             "University Roll Number": "roll_no", "Course": "course", "Year":"year",\
             "Branch Section": "branch", "Mobile Number": "phone_number",\
             "Name of Activity": "name_of_activity", "Venue of Activity": "venue_of_activity",\
-            "Duration": "duration", "From": "starting_date", "To":"end_date", "Remarks": "remarks"}
+            "Duration": "number_of_days", "From": "starting_date", "To":"end_date", "Remarks": "remarks"}
         df.rename(columns = rename_columns, inplace=True)
         # Change the datetime format of starting and end date
         df['starting_date'] = pd.to_datetime(df['starting_date']).dt.strftime('%Y-%m-%d')
