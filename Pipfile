@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-decouple = "*"
+django = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+whitenoise = "*"
+djangorestframework-simplejwt = "*"
+django-storages = "*"
+django-cors-headers = "*"
+boto3 = "*"
+pandas = "*"
+openpyxl = "*"
+django-import-export = "*"
+tablib = {extras = ["pandas"], version = "*"}
+opencv-python = "*"
+matplotlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
