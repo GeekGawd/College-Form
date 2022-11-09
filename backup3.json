@@ -1,0 +1,3872 @@
+[
+    {
+        "model": "form.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$IrKIuvBeBweC20n87Xwnf0$N3Bb21ByUXunwBEDL+aG9WAoiZBB4YElAJ/JwmYjCOI=",
+            "last_login": "2022-11-02T03:32:17.272Z",
+            "is_superuser": true,
+            "college_email": "admin@admin.com",
+            "phone_number": "7017453065",
+            "name": "Suyash Singh",
+            "department": "Applied Sciences & Humanities",
+            "designation": "HOD",
+            "email": "admin@admin.com",
+            "is_active": true,
+            "is_staff": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$VMhZOag79kmuyqW9doSnV9$JqoTBCMiFEONWLstvZNKbcM1MLr7eRUAaZDxkW0Gv5Q=",
+            "last_login": "2022-11-02T05:20:32.135Z",
+            "is_superuser": true,
+            "college_email": "babugopal@akgec.ac.in",
+            "phone_number": "9999482057",
+            "name": "Gopal Babu",
+            "department": "Information Technology",
+            "designation": "Assistant Professor",
+            "email": "babugopal@akgec.ac.in",
+            "is_active": true,
+            "is_staff": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$iBvkmfvVKOhEZJvJN71m2W$aRehKAz8LdGoNXBuGcFZ2zsTpOZBqUTrBTTod5ixG2o=",
+            "last_login": null,
+            "is_superuser": true,
+            "college_email": "vecell@akgec.ac.in",
+            "phone_number": "9999482057",
+            "name": "VE Cell Gopal Babu",
+            "department": "Mechanical Engineering",
+            "designation": "Professor",
+            "email": "vecell@akgec.ac.in",
+            "is_active": true,
+            "is_staff": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$MBpjRWOevFvaszRl5wVFPS$sE6DYfZYzm90hNxj8eWnmEk+YITwrUbSDFFBcc+E9yg=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "singhalshiwani@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$mhGnRNB0NKtPSfJXZCslVg$GMZrtnv/JAg4H4I8/F+mPWqC8qrmgGuqqCC+h9AL8r4=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmaanupama@akgec.ac.in",
+            "phone_number": "9868450322",
+            "name": "Dr. Anupama Sharma",
+            "department": "Information Technology",
+            "designation": "Associate Professor",
+            "email": "sharmaanupama@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$dnu3hBsE81f18jYBkAoCT7$3ieOH9Fvb1yYo4VC3t9vJ49H5CCAf6XO/GlAM7OR7WA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "pandeybn@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$rTJQOWv7Q3ByxaYm2gB7dD$DYMZ24JIe5X2fAsaYX1EEv7c8Fer9z5jPffyglBEOok=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "Hargun2013021@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$16kAiaXGRALKpbyZiZEbcP$ZZkoBu26C+5S1LXfhA5tAzz9MT/DfOuKcrRdd9qQk6Y=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "kaurinderjeet@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$e4ih43Clgh2suja5ahovkX$PVMCMfr27+ClMwRxIbNAbGvLLRs4BXD5WKYzkJz0WN4=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "chhabrajitender@akgec.ac.in",
+            "phone_number": "9729448787",
+            "name": "Jitender Chhabra",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "email": "chhabrajitender@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$bZT7pB01dOyPhJqUx5qQrG$rslVezHRqU6il43eOjqMD5oTaykgZxs+7uaevarPCc0=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "guptaavdhesh@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$iA53eHdokZeyPA1SYFxP0N$NEmoj1G5Pxh9KpkNDevNU7zwhqC0pukHyQQvmRY4IPw=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "singhaditya@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$up8PKTHiDwbUa2gnGFiCUG$lvAKqk1pzIhjnk/6IzMMyI6RVwS8RKYDN9BV7mcXFKE=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "singhpancham@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 15,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$wlajjUftlAg1PokIn4d0RH$tYTKDkG+6jBfU02zQgq1FqrJZARK7x1BMXyMIJLTQnU=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptaaman@akgec.ac.in",
+            "phone_number": "8500215048",
+            "name": "Aman Gupta",
+            "department": "Master Of Computer Applications",
+            "designation": "Assistant Professor",
+            "email": "guptaaman@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 16,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$q4VlP1cVQS3ABAPm5S2J0K$TNlD3Vl1b+GWTaDToO29JQnsAnDElPN4PDOHMy/APjo=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "singhvirendra@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 17,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$RPXWwOvZAWMIAuGZ11x258$hWv8evLKz/fkiiyKXVyFiboBRjWvLXl4iyjYHjrQt9c=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "bhavya2010045@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$t7A3wIvb5BwET1MZvj5eiG$LinuM4vebq9kc94U1jWXAy0KCVt77w7EouGXqAjay8U=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "ayush2010051@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$c5zId94mTu02kAOQQDONwz$O8sBjCjbCObDWPt2hpQj78MFovq/E7B1svTjBIxPU7A=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptanamrata@akgec.ac.in",
+            "phone_number": "9540935533",
+            "name": "Namrata Gangil",
+            "department": "Mechanical Engineering",
+            "designation": "Associate Professor",
+            "email": "guptanamrata@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 20,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$X0JwgR7r2FNYg1IwBYnWrL$bfVG+MRuYue8EihSj1uQjUdBEKZOsytJwsmwnpnqocA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "mujumdarsuvarna@akgec.ac.in",
+            "phone_number": "9650552846",
+            "name": "Suvarna Mujumdar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "mujumdarsuvarna@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 21,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$1XrDeXShCTf7iDa5UIhXLz$qAJ+jPrM78YunfBo/WcZi/E2cB2IOwHFgG4cUrGFinw=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "biswaspallab@akgec.ac.in",
+            "phone_number": "8860611228",
+            "name": "Dr. Pallab Biswas",
+            "department": "Mechanical Engineering",
+            "designation": "Professor and HoD",
+            "email": "biswaspallab@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$JCjgb4LKrwJQr1gvEj4KQF$ZAPF+3YDqwxrrvaerRG+uQLH7vCmm7IgGZDyl4WQ7FQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "singhraghvendra@akgec.ac.in",
+            "phone_number": "8953753535",
+            "name": "RAGHVENDRA PRATAP SINGH",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "singhraghvendra@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$p8Fq0wlwGKCg7aTdJx8ZDT$nthCz1lkjnt3HEdzHwDrtCevjtzAVdUN7l/Ys2WLDIM=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptaomkrishna@akgec.ac.in",
+            "phone_number": "9958001720",
+            "name": "Om Krishna Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "gargseema@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$pHcSVnQMYFO2r0q7adlJ98$AotcB8bWmzBkCXxQOZVlSoRsvPdIkJIvtOrWiWYNr9g=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "sharmanitya@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$2jJZ4SigvT7J7hlzmdVXui$QzY58GQ4AjdYcjwEwSJxU3nXp88q2daeLQBvM0qwTgw=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "email": "vermaparul@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 26,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$EdiMe8QVf7ti8ICGsGrYwy$FaEDQHhi9AS+ryyYvGJt3cw5/jeNnkaX6XXpsHp46ak=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "singhgagandeep@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$lTcv5RQJd3Vt62pTDACFeB$A1IGPWPU6GgNjRUhBxpToeXIEN9KoG3WRBSB7+lvCGE=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "shuklaakanksha@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 28,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$E4oXHyWaYZ3LziXXIYWrqo$sWC7rISFSnAz5W7WjC8YhuDFGCtjqxS+cHlvZlS2G78=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumarnaresh@akgec.ac.in",
+            "phone_number": "9416467489",
+            "name": "Naresh Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "kumarnaresh@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 29,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$Y2ItNXjo5zQLM239TO9kF2$51Ush5S/VL6chQKyNEFIRvYweiMcH7CAQtIf4w68EjE=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "saxenasulekha@akgec.ac.in",
+            "phone_number": "9650895115",
+            "name": "SULEKHA SAXENA",
+            "department": "Electronics And Communication Engineering",
+            "designation": "ASSISTANT PROFESSOR",
+            "email": "saxenasulekha@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 30,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$RBJLY5RlxE3tWno5mamDgg$2PALgXoU3f9P5b/T21jjUEWDZSG+cZGiQUXiJYUMTMI=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "rajsundeep@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 31,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$zLtDLlF12wZTQT0YvkhIub$m/u65SoCdOnltdPe1yOXXZ5yX5spCRH2596Bw6tHk6g=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "awasthimeenakshi@akgec.ac.in",
+            "phone_number": "9911871195",
+            "name": "Dr. Meenakshi Awasthi",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "email": "awasthimeenakshi@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 32,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$JhMSNmfv42pbd8AQYrq9yC$3bKS93Op0f2eL01ipS/hJ6wWz2FP0pMAmtkfWO3lVfI=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptaneelesh@akgec.ac.in",
+            "phone_number": "9826191439",
+            "name": "Dr Neelesh Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Professor",
+            "email": "guptaneelesh@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 33,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$vkZWXOD8OBM0ZtNMz8dcec$yNu0pjl3dj6T2AkWgLtgjMSuMTFyBXEPEW2iRBODQlk=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "parasharrajni@akgec.ac.in",
+            "phone_number": "9711102101",
+            "name": "RAJNI PRASHAR",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "parasharrajni@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 34,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$qrAbqU0qhAhEYWqDioZUV0$ebOVwmVs+ZocutuBSCyBHZNfEvTbZqsdBrfjXi6lH0E=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "gothwalsuman@akgec.ac.in",
+            "phone_number": "9654077464",
+            "name": "Dr. Suman Gothwal",
+            "department": "Mechanical Engineering",
+            "designation": "Assistant Professor",
+            "email": "gothwalsuman@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 35,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$wEGeYHxxlymiTExcqokLKe$HXmKbChCv4N4xtqQoDxJUQEQPVpq4ehnIoz7xkI1W+M=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmaneeraj@akgec.ac.in",
+            "phone_number": "9039185722",
+            "name": "Neeraj Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professsor",
+            "email": "sharmaneeraj@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 36,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$s2yoGQnefrkoHNZGlsOtxO$wyvx33PWIMaG7KpvfWj/IeX8Vcu7iyy1ECPYGuU18T0=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "saininaveen@akgec.ac.in",
+            "phone_number": "7042353544",
+            "name": "Naveen Kumar Saini",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "saininaveen@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 37,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$rt1vpDwdVO8rS14ruwyAhR$v62VO4oBDL73jExGRu6wMZbfOBZP2545HwQHIuUvE5g=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptaanurag@akgec.ac.in",
+            "phone_number": "8439012485",
+            "name": "Anurag Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "guptaanurag@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 38,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$6tvvd61s8zjEQLQPxR9yLD$c7RlR7DqXdX8gZClzarAcdzse2669P7zhh8hXK2Fe1E=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "rastogivaishali@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 39,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$XUI6txUWeh2avfTHf6zvbE$YgcP9HN/GCr1NIIOeIMGktH+eOaZW6MS//zhKJBxpbU=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "tyagishiva@akgec.ac.in",
+            "phone_number": "9540015099",
+            "name": "Shiva Tyagi",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "tyagishiva@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 40,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$QwgXkKo0iWXzeATCdEc3aN$wLkT3+xCEa8i8FNdIAVgRVaBSh35t7e/FkYbpzNp8lM=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptapradeep@akgec.ac.in",
+            "phone_number": "9039101824",
+            "name": "PRADEEP GUPTA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "guptapradeep@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 41,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$SfDdfZ6689u7yTrDx8KTGZ$81zQF5jMdVdFvw3wWmwFBWTFQIOavCZAo5xdeGb7eks=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "tiwariabhishek@akgec.ac.in",
+            "phone_number": "7737742021",
+            "name": "Abhishek Tiwari",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "tiwariabhishek@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 42,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$G0ugf2sjGh3AXPkJ0IJMPN$h2iOoDCwswUoyoyIxAVEDwMXr1HEzcnoVBQLC0fEqbc=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "gargamit@akgec.ac.in",
+            "phone_number": "9911177942",
+            "name": "Dr. AMIT GARG",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "email": "gargamit@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 43,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$y5sNGVKKsWAmKxg0ssJy8G$2M2hI6qTAOBQRjt/aR8wCx40S71k0wjgOS/XnF0Z48Q=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "gargneha@akgec.ac.in",
+            "phone_number": "8587096900",
+            "name": "Neha Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "gargneha@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 44,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$uvNACtDVynEnHSUgupEQQz$h+br53NiNNWcpu6crmzgmtOz7aLMyzdo/GU3oUgFliQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "goelanu@akgec.ac.in",
+            "phone_number": "9868333454",
+            "name": "Anu Goel",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "goelanu@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 45,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$Hp1EDTxkcGIVtdn1Ctr3yF$3yRliVhC5PmhwzdY31OIbYg7jpoZaDE2k27pChMB7Kk=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "agarwalcharu@akgec.ac.in",
+            "phone_number": "9891994775",
+            "name": "Dr. Charu Agarwal",
+            "department": "Computer Science And Engineering",
+            "designation": "Associate Professor",
+            "email": "agarwalcharu@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 46,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$aQaWdB4Vz8Hqw3c681A2rw$Z+7iZFpVSAnVjCQU09ux6VgCDrxN6mlTGLBQDhkwZTQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptasonam@akgec.ac.in",
+            "phone_number": "8126680787",
+            "name": "Sonam Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "ASSOCIATE PROFESSOR",
+            "email": "guptasonam@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 47,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$1Ux3jtSRDzA5coza20eJow$QTKk0FkgQFF2tfh6BX607B+crRLHHJBD78k1lTCGyR4=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmaricha@akgec.ac.in",
+            "phone_number": "9971992110",
+            "name": "Richa",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "sharmaricha@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 48,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$cEGf30vkoPh9v5IJwQ3ffS$JVV3C/XQeomNw3+zQGWNiHjH7xyXjvxwzqdB4iWIicI=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptaomkrishna@akgec.ac.in",
+            "phone_number": "9958001720",
+            "name": "Om Krishna Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "guptaomkrishna@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 49,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$AEUIShL0WltGpobhnn5G9b$qGsoYH638Nq8PU5K2p74DTHmOwV4LRGgxgU4Q/sRRTg=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumaralok@akgec.ac.in",
+            "phone_number": "9760141072",
+            "name": "Alok Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "kumaralok@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 50,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$3Z2Hwg9KJpZv8hkxmW9pFq$IUM0COo9UnS1PXpKuQWgS5BLN53Z9ck/Q1FDQAtPr2g=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmauma@akgec.ac.in",
+            "phone_number": "9953374640",
+            "name": "Uma Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "sharmauma@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 51,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$bdE9gUMQAUIpgBLWOxjSoa$otR3EfdFqykC6qW3M5NChTZiYtWSEu/2HFZSQnZObhc=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "gahlotsonali@akgec.ac.in",
+            "phone_number": "8126302891",
+            "name": "Sonali Gahlot",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "gahlotsonali@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 52,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$jrCMcCwHIy0RE3PrPUSEjH$FmHz+kgSyxm4bNTNpWkP7BjRAFMP4o9s0AAZCLB+tMg=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "guptapreeti@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 53,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$O7L9F2oxCjjeppH6v2hclz$JmbT+PwnLwdkg392W3RuJkiARGklWEQDFpMyndwgvpE=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "yadavsandeep@akgec.ac.in",
+            "phone_number": "9718568929",
+            "name": "Sandeep Yadav",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "yadavsandeep@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 54,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$ZhapnpsjiqrnY5RmY8R6Dh$q4397yY9RseCydOYEgfyAIZy10WPven5a4cqJz8MKTs=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "chauhandushyant@akgec.ac.in",
+            "phone_number": "9555640024",
+            "name": "dushyant singh chauhan",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "chauhandushyant@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 55,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$bcjWY6QsXx0jUCrRBVePW8$JdwDJl2RPs4er5N/7ZQo20KRRXjtv5vCKhg7HIjGFXA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "jainpradeep@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 56,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$BXZ1zipUlZGRoiBlzpFHCA$pzrRJPv1mQ4spgUC0AudtiiwDbhHn7kFRL/FHPWM2V0=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "shuklakshama@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 57,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$x4VuiEkuYhYyRsUFR7E29M$hBaFBcKvu3qId0hW0/JZLvx/nJ5riMosbm7gFDDleCc=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmarenu@akgec.ac.in",
+            "phone_number": "9999046408",
+            "name": "Renu Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "sharmarenu@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 58,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$H2iVwZs6jnzOB2q9TLUqjh$bVXBHX6pGn/XDl6NcOSgPr7XJc5WrDyPoB8wKFCkRug=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "vermaakhilesh@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 59,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$tUnwUimFP33QFxwctwNaYk$fD6XTDfrvI41ELHpsAY8HpI9Yxc4itundlsOyRpvUX0=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "bansalnishu@akgec.ac.in",
+            "phone_number": "7042434673",
+            "name": "Nishu Bansal",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "bansalnishu@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 60,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$0hM5HEXAyDwyCnSAPIhtk3$LSwjSO2an/91NR0yJHFllUOCFrFUFo4pM4PEvrFPUaI=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "mishraupasana@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 61,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$LdojXZWFP066yHBfNlowMF$jwKVxWiit0ZvtW3U2RmIWQqRVbR3hRoDXlaN9oi5FBQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "jainjaishree@akgec.ac.in",
+            "phone_number": "7055455947",
+            "name": "Jaishree Jain",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "jainjaishree@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 62,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$YmUXETecckK4JH38cuk4fY$cnAlrF/p9Xl8N4jtI2zGNPBaFrczL/iilnU0ndiNREQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumar.sachin@akgec.ac.in",
+            "phone_number": "9999132283",
+            "name": "Sachin Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Professor",
+            "email": "kumar.sachin@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 63,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$f1NOiCNqxtF0JiTXiaNihJ$5A+mkzjpY+Ejhjw5MHHIPh0x39t9bstSHzlsvDiqqNA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "yasminnilufar@akgec.ac.in",
+            "phone_number": "8076679757",
+            "name": "Nilufar Yasmin",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "yasminnilufar@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 64,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$6UAUEtRLIOMZuHooU5nPAj$zp2AAM2zC7bT/AvSRx97g78pBfEgsYxQQFSJyQ72giA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "dwivedianuj@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 65,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$tDFHPKcrXtxSPq57qV3UFU$vAtw/blr4terJUYTeVp1kQEwUG6YCwSkgRfPS2km8v4=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "guptatukur@akgec.ac.in",
+            "phone_number": "8800904784",
+            "name": "Tukur Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "guptatukur@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 66,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$2JtKWhJ7YK7dLHxCIyoNCy$Td5gSBrIXRPGRIk538jm/fTRJNnG5W028j8wAJKyYv8=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "asthanaamita@akgec.ac.in",
+            "phone_number": "8948530222",
+            "name": "Amita Asthana",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "email": "asthanaamita@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 67,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$MBZsfok5YVm2DEysgLwMqI$A605o2g4oCwSoDD15hZFHKI6tLE0t8IbnHl8rCWwsvA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "rashi@akgec.ac.in",
+            "phone_number": "9818112435",
+            "name": "Rashi",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "email": "rashi@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 68,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$af8wAV9fsuszc8ACpC1nwR$gd9BmlhVDhFzZfQDMVivhW4JsO5ohKcE18G1d6UQM9s=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "kansalmrignainy@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 69,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$ARJ801wG8IKo4NxPegwyXh$6Ndoz4LcAKWi4rg/qw0bOjxtaaIwQUD9rW1TNMqgqUM=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumarakash@akgec.ac.in",
+            "phone_number": "9927190229",
+            "name": "Dr. AKASH KUMAR",
+            "department": "Applied Sciences & Humanities",
+            "designation": "ASSISTANT PROFESSOR",
+            "email": "kumarakash@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 70,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$ZsiOJPedZg4zaaFzWcFtcx$3oqaX3SpyREzNEjcPYBjOIQGogfAAOEfveG/o7AeqKY=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumar.anuj@akgec.ac.in",
+            "phone_number": "9990544554",
+            "name": "ANUJ KUMAR",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "kumar.anuj@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 71,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$OZkboShO20R4oEeagtjimp$KsJtmcaZs11mBxTABsdBnTDr6rxFWG8sbJMHKd8DZMU=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": null,
+            "phone_number": null,
+            "name": null,
+            "department": null,
+            "designation": null,
+            "email": "grovervishwas@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 72,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$LExFQ9eGO1H35DLp5yINEy$Lx3tMdCULvjh+0vafxGykUFbQurZ55NLuY+C6pvx/ZY=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "kumar.manish@akgec.ac.in",
+            "phone_number": "9837802850",
+            "name": "Manish Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "email": "kumar.manish@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 73,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$1NGOayNu5oDKXC7Z5B7QEs$C/rDxHJBoJRGBzg3l6+X6tfQiGRw+DBt9MrElhxTz/o=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "roshanvikas@akgec.ac.in",
+            "phone_number": "9911752833",
+            "name": "VIKAS ROSHAN",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "email": "roshanvikas@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.user",
+        "pk": 74,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$h5AMpTjWFG2b3YxzS8raZw$0cb/MsaEhoBTJSkR09X3qMzToKV9U9GH13X4siaJ0DA=",
+            "last_login": null,
+            "is_superuser": false,
+            "college_email": "sharmarashmi@akgec.ac.in",
+            "phone_number": "9910565491",
+            "name": "Dr Rashmi Sharma",
+            "department": "Information Technology",
+            "designation": "assistant professor",
+            "email": "sharmarashmi@akgec.ac.in",
+            "is_active": true,
+            "is_staff": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "form.otp",
+        "pk": 50,
+        "fields": {
+            "otp": 7913,
+            "otp_email": "srivastavakarunesh@akgec.ac.in",
+            "time_created": 1667550850
+        }
+    },
+    {
+        "model": "form.otp",
+        "pk": 75,
+        "fields": {
+            "otp": 8505,
+            "otp_email": "kumarakash@akgec.ac.in",
+            "time_created": 1667971642
+        }
+    },
+    {
+        "model": "form.otp",
+        "pk": 80,
+        "fields": {
+            "otp": 7768,
+            "otp_email": "prajapatiyogendra@akgec.ac.in",
+            "time_created": 1667972421
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 10,
+        "fields": {
+            "user": [
+                "sharmaanupama@akgec.ac.in"
+            ],
+            "college_email": "sharmaanupama@akgec.ac.in",
+            "phone_number": "9868450322",
+            "name": "Dr. Anupama Sharma",
+            "department": "Information Technology",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "ABESEC College",
+            "certificate_number": "161212018",
+            "certificate": "level_1.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 11,
+        "fields": {
+            "user": [
+                "sharmaanupama@akgec.ac.in"
+            ],
+            "college_email": "sharmaanupama@akgec.ac.in",
+            "phone_number": "9868450322",
+            "name": "Dr. Anupama Sharma",
+            "department": "Information Technology",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "IPEC College",
+            "certificate_number": "180608003",
+            "certificate": "referesher.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 12,
+        "fields": {
+            "user": [
+                "sharmaanupama@akgec.ac.in"
+            ],
+            "college_email": "sharmaanupama@akgec.ac.in",
+            "phone_number": "9868450322",
+            "name": "Dr. Anupama Sharma",
+            "department": "Information Technology",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2019-01-15",
+            "end_date": "2019-01-22",
+            "number_of_days": "8",
+            "venue": "KIET College",
+            "certificate_number": "2L190107002",
+            "certificate": "level_2.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 13,
+        "fields": {
+            "user": [
+                "sharmaanupama@akgec.ac.in"
+            ],
+            "college_email": "sharmaanupama@akgec.ac.in",
+            "phone_number": "9868450322",
+            "name": "Dr. Anupama Sharma",
+            "department": "Information Technology",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2019-05-09",
+            "end_date": "2019-05-16",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "3L190503002",
+            "certificate": "Level_3.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 20,
+        "fields": {
+            "user": [
+                "guptanamrata@akgec.ac.in"
+            ],
+            "college_email": "guptanamrata@akgec.ac.in",
+            "phone_number": "9540935533",
+            "name": "Namrata Gangil",
+            "department": "Mechanical Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-12-26",
+            "end_date": "2020-01-02",
+            "number_of_days": "8",
+            "venue": "KIET, Ghaziabad",
+            "certificate_number": "191272048",
+            "certificate": "Dr._Namrata_UHV_compressed.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 21,
+        "fields": {
+            "user": [
+                "mujumdarsuvarna@akgec.ac.in"
+            ],
+            "college_email": "mujumdarsuvarna@akgec.ac.in",
+            "phone_number": "9650552846",
+            "name": "Suvarna Mujumdar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-07-04",
+            "end_date": "2019-07-11",
+            "number_of_days": "8",
+            "venue": "Inderprastha Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/8716",
+            "certificate": "Suvarna_Mujumdar_uhvpe_certificate_level1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 22,
+        "fields": {
+            "user": [
+                "mujumdarsuvarna@akgec.ac.in"
+            ],
+            "college_email": "mujumdarsuvarna@akgec.ac.in",
+            "phone_number": "9650552846",
+            "name": "Suvarna Mujumdar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/88051",
+            "certificate": "Suvarna_Mujumdar_refrsher_level.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 23,
+        "fields": {
+            "user": [
+                "biswaspallab@akgec.ac.in"
+            ],
+            "college_email": "biswaspallab@akgec.ac.in",
+            "phone_number": "8860611228",
+            "name": "Dr. Pallab Biswas",
+            "department": "Mechanical Engineering",
+            "designation": "Professor and HoD",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-05-02",
+            "end_date": "2018-05-08",
+            "number_of_days": "7",
+            "venue": "IIT Kanpur",
+            "certificate_number": "H180502027",
+            "certificate": "UHV1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NA"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 24,
+        "fields": {
+            "user": [
+                "singhraghvendra@akgec.ac.in"
+            ],
+            "college_email": "singhraghvendra@akgec.ac.in",
+            "phone_number": "8953753535",
+            "name": "RAGHVENDRA PRATAP SINGH",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2020-04-10",
+            "end_date": "2020-04-14",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "AICTE/FDP-SI/OnlineWorkshop/200/8769",
+            "certificate": "UHV-I.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 25,
+        "fields": {
+            "user": [
+                "singhraghvendra@akgec.ac.in"
+            ],
+            "college_email": "singhraghvendra@akgec.ac.in",
+            "phone_number": "8953753535",
+            "name": "RAGHVENDRA PRATAP SINGH",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-06-14",
+            "end_date": "2018-06-21",
+            "number_of_days": "8",
+            "venue": "KIPM CET, Gorakhpur",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/7568",
+            "certificate": "PSL-1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 26,
+        "fields": {
+            "user": [
+                "singhraghvendra@akgec.ac.in"
+            ],
+            "college_email": "singhraghvendra@akgec.ac.in",
+            "phone_number": "8953753535",
+            "name": "RAGHVENDRA PRATAP SINGH",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2019-01-15",
+            "end_date": "2019-01-22",
+            "number_of_days": "7",
+            "venue": "KIPM CET, Gorakhpur",
+            "certificate_number": "R190113008",
+            "certificate": "Ref.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 27,
+        "fields": {
+            "user": [
+                "singhraghvendra@akgec.ac.in"
+            ],
+            "college_email": "singhraghvendra@akgec.ac.in",
+            "phone_number": "8953753535",
+            "name": "RAGHVENDRA PRATAP SINGH",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2019-06-25",
+            "end_date": "2019-07-02",
+            "number_of_days": "8",
+            "venue": "IPEC, Ghaziabad",
+            "certificate_number": "2L190608019",
+            "certificate": "PSL-2.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 28,
+        "fields": {
+            "user": [
+                "biswaspallab@akgec.ac.in"
+            ],
+            "college_email": "biswaspallab@akgec.ac.in",
+            "phone_number": "8860611228",
+            "name": "Dr. Pallab Biswas",
+            "department": "Mechanical Engineering",
+            "designation": "Professor and HoD",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-12-17",
+            "end_date": "2018-12-24",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "R181212015",
+            "certificate": "REFRESHER.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NA"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 29,
+        "fields": {
+            "user": [
+                "gargseema@akgec.ac.in"
+            ],
+            "college_email": "gargseema@akgec.ac.in",
+            "phone_number": "9717232515",
+            "name": "Dr. Seema Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2016-06-17",
+            "end_date": "2016-06-24",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "160605076",
+            "certificate": "level1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 30,
+        "fields": {
+            "user": [
+                "gargseema@akgec.ac.in"
+            ],
+            "college_email": "gargseema@akgec.ac.in",
+            "phone_number": "9717232515",
+            "name": "Dr. Seema Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "R161203020",
+            "certificate": "refresher.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 31,
+        "fields": {
+            "user": [
+                "biswaspallab@akgec.ac.in"
+            ],
+            "college_email": "biswaspallab@akgec.ac.in",
+            "phone_number": "8860611228",
+            "name": "Dr. Pallab Biswas",
+            "department": "Mechanical Engineering",
+            "designation": "Professor and HoD",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2020-01-11",
+            "end_date": "2020-01-20",
+            "number_of_days": "10",
+            "venue": "AKGEC",
+            "certificate_number": "UHV2200101015",
+            "certificate": "UHV2.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "Not Taken Yet"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 32,
+        "fields": {
+            "user": [
+                "babugopal@akgec.ac.in"
+            ],
+            "college_email": "babugopal@akgec.ac.in",
+            "phone_number": "9999482057",
+            "name": "Dr. Gopal Babu",
+            "department": "Information Technology",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2017-07-13",
+            "end_date": "2017-07-19",
+            "number_of_days": "7",
+            "venue": "IIT Kanpur",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/4943",
+            "certificate": "level_1_certificate.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 33,
+        "fields": {
+            "user": [
+                "gargseema@akgec.ac.in"
+            ],
+            "college_email": "gargseema@akgec.ac.in",
+            "phone_number": "9717232515",
+            "name": "Dr. Seema Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "2L171102019",
+            "certificate": "level2.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 34,
+        "fields": {
+            "user": [
+                "gargseema@akgec.ac.in"
+            ],
+            "college_email": "gargseema@akgec.ac.in",
+            "phone_number": "9717232515",
+            "name": "Dr. Seema Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2019-05-09",
+            "end_date": "2019-05-16",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "3L190503016",
+            "certificate": "level3.pdf",
+            "incentive_detail": "AKTU Level-3 (15,000)",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 35,
+        "fields": {
+            "user": [
+                "biswaspallab@akgec.ac.in"
+            ],
+            "college_email": "biswaspallab@akgec.ac.in",
+            "phone_number": "8860611228",
+            "name": "Dr. Pallab Biswas",
+            "department": "Mechanical Engineering",
+            "designation": "Professor and HoD",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "10",
+            "venue": "IIT Kanpur",
+            "certificate_number": "UHV3191201026",
+            "certificate": "UHV3.pdf",
+            "incentive_detail": "AKTU Level-3 (15,000)",
+            "remarks": "Not Taken Yet"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 36,
+        "fields": {
+            "user": [
+                "gargseema@akgec.ac.in"
+            ],
+            "college_email": "gargseema@akgec.ac.in",
+            "phone_number": "9717232515",
+            "name": "Dr. Seema Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on VREHC",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "9",
+            "venue": "IIT Kanpur",
+            "certificate_number": "UHV3191201046",
+            "certificate": "IIT_Kanpur_UHV_3.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 37,
+        "fields": {
+            "user": [
+                "vermaparul@akgec.ac.in"
+            ],
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2013-07-29",
+            "end_date": "2013-08-05",
+            "number_of_days": "8",
+            "venue": "Surya group of institution Lucknow",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/5364",
+            "certificate": "uhv_level_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 38,
+        "fields": {
+            "user": [
+                "vermaparul@akgec.ac.in"
+            ],
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2016-06-01",
+            "end_date": "2016-06-08",
+            "number_of_days": "8",
+            "venue": "MPEC Kanpur",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/5364",
+            "certificate": "uhv_refresher_level.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 39,
+        "fields": {
+            "user": [
+                "vermaparul@akgec.ac.in"
+            ],
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College",
+            "certificate_number": "L171102010",
+            "certificate": "uhv_level_2.pdf",
+            "incentive_detail": "AICTE UHV-III (10,000)",
+            "remarks": "nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 40,
+        "fields": {
+            "user": [
+                "vermaparul@akgec.ac.in"
+            ],
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2018-05-01",
+            "end_date": "2018-05-08",
+            "number_of_days": "8",
+            "venue": "ABES Ghaziabad",
+            "certificate_number": "3L180501012",
+            "certificate": "uhv_level_3.pdf",
+            "incentive_detail": "AKTU Level-3 (15,000)",
+            "remarks": "nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 41,
+        "fields": {
+            "user": [
+                "vermaparul@akgec.ac.in"
+            ],
+            "college_email": "vermaparul@akgec.ac.in",
+            "phone_number": "9871227037",
+            "name": "Dr Parul Verma",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on HVMD",
+            "online_fdp": "",
+            "starting_date": "2019-12-10",
+            "end_date": "2019-12-19",
+            "number_of_days": "10",
+            "venue": "IIT Kanpur",
+            "certificate_number": "HVMD191201010",
+            "certificate": "madhyashtha_darshan_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 42,
+        "fields": {
+            "user": [
+                "kumarnaresh@akgec.ac.in"
+            ],
+            "college_email": "kumarnaresh@akgec.ac.in",
+            "phone_number": "9416467489",
+            "name": "Naresh Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "ABES Engineering College Ghaziabad",
+            "certificate_number": "180643037",
+            "certificate": "UHV_level_1_Certificate.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 43,
+        "fields": {
+            "user": [
+                "kumarnaresh@akgec.ac.in"
+            ],
+            "college_email": "kumarnaresh@akgec.ac.in",
+            "phone_number": "9416467489",
+            "name": "Naresh Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2019-06-15",
+            "end_date": "2019-06-22",
+            "number_of_days": "7",
+            "venue": "KIET Ghaziabad",
+            "certificate_number": "R190616020",
+            "certificate": "HVPE_ref.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 44,
+        "fields": {
+            "user": [
+                "kumarnaresh@akgec.ac.in"
+            ],
+            "college_email": "kumarnaresh@akgec.ac.in",
+            "phone_number": "9416467489",
+            "name": "Naresh Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on UHBC",
+            "online_fdp": "",
+            "starting_date": "2020-01-11",
+            "end_date": "2020-01-20",
+            "number_of_days": "10",
+            "venue": "AKGEC Ghaziabad",
+            "certificate_number": "UHV2200101014",
+            "certificate": "UHV-2_Certificate.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "Nil"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 45,
+        "fields": {
+            "user": [
+                "saxenasulekha@akgec.ac.in"
+            ],
+            "college_email": "saxenasulekha@akgec.ac.in",
+            "phone_number": "9650895115",
+            "name": "SULEKHA SAXENA",
+            "department": "Electronics And Communication Engineering",
+            "designation": "ASSISTANT PROFESSOR",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-UHV Refresher Part-I",
+            "starting_date": "2022-09-26",
+            "end_date": "2022-09-30",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "AICTE/FDP-SI/OnlineWorkshop/229/151455",
+            "certificate": "26-30September2022IntroductoryWorkshop.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Online FDP."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 46,
+        "fields": {
+            "user": [
+                "chhabrajitender@akgec.ac.in"
+            ],
+            "college_email": "chhabrajitender@akgec.ac.in",
+            "phone_number": "9729448787",
+            "name": "Jitender Chhabra",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-06-26",
+            "end_date": "2019-07-03",
+            "number_of_days": "8",
+            "venue": "Krishna Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/8562",
+            "certificate": "UHVPE_LEVEL1_Jitender_Chhabra.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NA"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 47,
+        "fields": {
+            "user": [
+                "chhabrajitender@akgec.ac.in"
+            ],
+            "college_email": "chhabrajitender@akgec.ac.in",
+            "phone_number": "9729448787",
+            "name": "Jitender Chhabra",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/87932",
+            "certificate": "UHVPE_Refresher_Jitender_Chhabra.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 48,
+        "fields": {
+            "user": [
+                "awasthimeenakshi@akgec.ac.in"
+            ],
+            "college_email": "awasthimeenakshi@akgec.ac.in",
+            "phone_number": "9911871195",
+            "name": "Dr. Meenakshi Awasthi",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-12-26",
+            "end_date": "2020-01-02",
+            "number_of_days": "8",
+            "venue": "KIET Ghaziabad",
+            "certificate_number": "191272044",
+            "certificate": "UHVPE.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 49,
+        "fields": {
+            "user": [
+                "parasharrajni@akgec.ac.in"
+            ],
+            "college_email": "parasharrajni@akgec.ac.in",
+            "phone_number": "9711102101",
+            "name": "RAJNI PRASHAR",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-12-01",
+            "end_date": "2018-12-08",
+            "number_of_days": "8",
+            "venue": "IPEC engineering college",
+            "certificate_number": "H181205017",
+            "certificate": "New_Doc_2019-02-28_13.32.56_1",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 50,
+        "fields": {
+            "user": [
+                "gothwalsuman@akgec.ac.in"
+            ],
+            "college_email": "gothwalsuman@akgec.ac.in",
+            "phone_number": "9654077464",
+            "name": "Dr. Suman Gothwal",
+            "department": "Mechanical Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-07-04",
+            "end_date": "2019-07-11",
+            "number_of_days": "8",
+            "venue": "Inderprastha Engineering College, Ghaziabad",
+            "certificate_number": "190768060",
+            "certificate": "UHVPE__2019.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 51,
+        "fields": {
+            "user": [
+                "sharmaneeraj@akgec.ac.in"
+            ],
+            "college_email": "sharmaneeraj@akgec.ac.in",
+            "phone_number": "9039185722",
+            "name": "Neeraj Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professsor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2019-12-26",
+            "end_date": "2020-01-02",
+            "number_of_days": "8",
+            "venue": "KIET Group of Institutions, Ghaziabad",
+            "certificate_number": "F.No AICTE/FDP-SI/NRO/167/13845",
+            "certificate": "KIET26Dec2019-2jan2020.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 52,
+        "fields": {
+            "user": [
+                "saininaveen@akgec.ac.in"
+            ],
+            "college_email": "saininaveen@akgec.ac.in",
+            "phone_number": "7042353544",
+            "name": "Naveen Kumar Saini",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2015-12-14",
+            "end_date": "2015-12-21",
+            "number_of_days": "7",
+            "venue": "IIT Kanpur",
+            "certificate_number": "151201022",
+            "certificate": "L1-Human_Values_Certificates_2.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 53,
+        "fields": {
+            "user": [
+                "saininaveen@akgec.ac.in"
+            ],
+            "college_email": "saininaveen@akgec.ac.in",
+            "phone_number": "7042353544",
+            "name": "Naveen Kumar Saini",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2017-06-13",
+            "end_date": "2017-06-20",
+            "number_of_days": "8",
+            "venue": "ABES Engineering College Ghaziabad",
+            "certificate_number": "R170604012",
+            "certificate": "Refresher_Human_Values_Certificates.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 54,
+        "fields": {
+            "user": [
+                "saininaveen@akgec.ac.in"
+            ],
+            "college_email": "saininaveen@akgec.ac.in",
+            "phone_number": "7042353544",
+            "name": "Naveen Kumar Saini",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "AKGEC Ghaziabad",
+            "certificate_number": "2L171102008",
+            "certificate": "L2-Human_Values_Certificate.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 55,
+        "fields": {
+            "user": [
+                "guptaanurag@akgec.ac.in"
+            ],
+            "college_email": "guptaanurag@akgec.ac.in",
+            "phone_number": "8439012485",
+            "name": "Anurag Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2022-04-06",
+            "end_date": "2022-04-13",
+            "number_of_days": "7",
+            "venue": "Ajay kumar Garg Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/132491",
+            "certificate": "6-13April2022AKGEC.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 56,
+        "fields": {
+            "user": [
+                "tyagishiva@akgec.ac.in"
+            ],
+            "college_email": "tyagishiva@akgec.ac.in",
+            "phone_number": "9540015099",
+            "name": "Shiva Tyagi",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-06-26",
+            "end_date": "2019-07-03",
+            "number_of_days": "8",
+            "venue": "Krishna Engineering College",
+            "certificate_number": "190665033",
+            "certificate": "hvpe_certificate.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 57,
+        "fields": {
+            "user": [
+                "guptapradeep@akgec.ac.in"
+            ],
+            "college_email": "guptapradeep@akgec.ac.in",
+            "phone_number": "9039101824",
+            "name": "PRADEEP GUPTA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2020-07-23",
+            "end_date": "2020-07-27",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "F.No AICTE/FDP-SI/OnlineWorkshop/218/28357",
+            "certificate": "onlinewokrshop23to27july2020_1_HMAN_VALUUE.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 58,
+        "fields": {
+            "user": [
+                "guptapradeep@akgec.ac.in"
+            ],
+            "college_email": "guptapradeep@akgec.ac.in",
+            "phone_number": "9039101824",
+            "name": "PRADEEP GUPTA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2021-02-08",
+            "end_date": "2021-02-15",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College, Ghaziabad",
+            "certificate_number": "F.No AICTE/FDP-SI/NRO/221/56782",
+            "certificate": "AKGEC8-15Feb2021_leval_1_uhv.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 61,
+        "fields": {
+            "user": [
+                "gargneha@akgec.ac.in"
+            ],
+            "college_email": "gargneha@akgec.ac.in",
+            "phone_number": "8587096900",
+            "name": "Neha Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on VREHC",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "10",
+            "venue": "IIT KANPUR",
+            "certificate_number": "UHV3191201023",
+            "certificate": "CamScanner_11-03-2022_19.13.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "I have received incentive for level 2."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 62,
+        "fields": {
+            "user": [
+                "gargneha@akgec.ac.in"
+            ],
+            "college_email": "gargneha@akgec.ac.in",
+            "phone_number": "8587096900",
+            "name": "Neha Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2016-06-17",
+            "end_date": "2016-06-24",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "160605038",
+            "certificate": "CamScanner_11-03-2022_19.09.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NOT ELIGIBLE"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 63,
+        "fields": {
+            "user": [
+                "gargneha@akgec.ac.in"
+            ],
+            "college_email": "gargneha@akgec.ac.in",
+            "phone_number": "8587096900",
+            "name": "Neha Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "R161203012",
+            "certificate": "CamScanner_11-03-2022_19.13_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NOT ELIGIBLE"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 64,
+        "fields": {
+            "user": [
+                "goelanu@akgec.ac.in"
+            ],
+            "college_email": "goelanu@akgec.ac.in",
+            "phone_number": "9868333454",
+            "name": "Anu Goel",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-01-07",
+            "end_date": "2019-01-14",
+            "number_of_days": "8",
+            "venue": "ABES Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/8099",
+            "certificate": "human_value_certificate.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 65,
+        "fields": {
+            "user": [
+                "goelanu@akgec.ac.in"
+            ],
+            "college_email": "goelanu@akgec.ac.in",
+            "phone_number": "9868333454",
+            "name": "Anu Goel",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "AKGEC Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/87981",
+            "certificate": "AKGEC1-8September2021.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 66,
+        "fields": {
+            "user": [
+                "gargneha@akgec.ac.in"
+            ],
+            "college_email": "gargneha@akgec.ac.in",
+            "phone_number": "8587096900",
+            "name": "Neha Garg",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2018-07-10",
+            "end_date": "2018-07-17",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "2L180704012",
+            "certificate": "CamScanner_11-03-2022_19.16_D0Ip2Bc.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "I have received incentive."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 67,
+        "fields": {
+            "user": [
+                "gargamit@akgec.ac.in"
+            ],
+            "college_email": "gargamit@akgec.ac.in",
+            "phone_number": "9911177942",
+            "name": "Dr. AMIT GARG",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "ABES ENGINEERING COLLEGE, GHAZIABAD",
+            "certificate_number": "180643003",
+            "certificate": "Workshop_UHVPE_-_Level_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 68,
+        "fields": {
+            "user": [
+                "gargamit@akgec.ac.in"
+            ],
+            "college_email": "gargamit@akgec.ac.in",
+            "phone_number": "9911177942",
+            "name": "Dr. AMIT GARG",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2020-01-12",
+            "end_date": "2020-01-19",
+            "number_of_days": "8",
+            "venue": "ABES ENGINEERING COLLEGE, GHAZIABAD",
+            "certificate_number": "R200119003",
+            "certificate": "Workshop_UHVPE-Refresher.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 69,
+        "fields": {
+            "user": [
+                "agarwalcharu@akgec.ac.in"
+            ],
+            "college_email": "agarwalcharu@akgec.ac.in",
+            "phone_number": "9891994775",
+            "name": "Dr. Charu Agarwal",
+            "department": "Computer Science And Engineering",
+            "designation": "Associate Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-07-04",
+            "end_date": "2019-07-11",
+            "number_of_days": "8",
+            "venue": "Inderprastha Engineering College, Ghaziabad",
+            "certificate_number": "190768013",
+            "certificate": "Human_Values_Certificate_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 70,
+        "fields": {
+            "user": [
+                "sharmaricha@akgec.ac.in"
+            ],
+            "college_email": "sharmaricha@akgec.ac.in",
+            "phone_number": "9971992110",
+            "name": "Richa",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-06-26",
+            "end_date": "2019-07-03",
+            "number_of_days": "8",
+            "venue": "Krishna Engineering College, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/8580",
+            "certificate": "1._Participation_Certificates-6.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 71,
+        "fields": {
+            "user": [
+                "guptasonam@akgec.ac.in"
+            ],
+            "college_email": "guptasonam@akgec.ac.in",
+            "phone_number": "8126680787",
+            "name": "Sonam Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "ASSOCIATE PROFESSOR",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2017-06-23",
+            "end_date": "2017-06-30",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "170620081",
+            "certificate": "New_Doc_2017-07-05_2.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 72,
+        "fields": {
+            "user": [
+                "guptasonam@akgec.ac.in"
+            ],
+            "college_email": "guptasonam@akgec.ac.in",
+            "phone_number": "8126680787",
+            "name": "Sonam Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "ASSOCIATE PROFESSOR",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "IPEC",
+            "certificate_number": "R180608020",
+            "certificate": "New_Doc_2018-07-16_2.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "OK"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 73,
+        "fields": {
+            "user": [
+                "guptasonam@akgec.ac.in"
+            ],
+            "college_email": "guptasonam@akgec.ac.in",
+            "phone_number": "8126680787",
+            "name": "Sonam Gupta",
+            "department": "Computer Science And Engineering",
+            "designation": "ASSOCIATE PROFESSOR",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on VREHC",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "10",
+            "venue": "IIT Kanpur",
+            "certificate_number": "UHV3191201049",
+            "certificate": "New_Doc_2019-12-29_14.31.21_2.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "OK"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 74,
+        "fields": {
+            "user": [
+                "tiwariabhishek@akgec.ac.in"
+            ],
+            "college_email": "tiwariabhishek@akgec.ac.in",
+            "phone_number": "7737742021",
+            "name": "Abhishek Tiwari",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "ABESEC, Ghaziabad",
+            "certificate_number": "171127001",
+            "certificate": "UHVPE_Level_1_1.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "None"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 75,
+        "fields": {
+            "user": [
+                "tiwariabhishek@akgec.ac.in"
+            ],
+            "college_email": "tiwariabhishek@akgec.ac.in",
+            "phone_number": "7737742021",
+            "name": "Abhishek Tiwari",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "IPEC Ghaziabad",
+            "certificate_number": "R180608001",
+            "certificate": "UHVPE_REFresher_1.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "None"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 76,
+        "fields": {
+            "user": [
+                "tiwariabhishek@akgec.ac.in"
+            ],
+            "college_email": "tiwariabhishek@akgec.ac.in",
+            "phone_number": "7737742021",
+            "name": "Abhishek Tiwari",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2019-01-15",
+            "end_date": "2019-01-22",
+            "number_of_days": "8",
+            "venue": "KIET, Ghaziabad",
+            "certificate_number": "2L190107001",
+            "certificate": "UHVPE_certificate_1.pdf",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "None"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 78,
+        "fields": {
+            "user": [
+                "guptaomkrishna@akgec.ac.in"
+            ],
+            "college_email": "guptaomkrishna@akgec.ac.in",
+            "phone_number": "9958001720",
+            "name": "Om Krishna Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "7",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO226/88103",
+            "certificate": "UHV_Refresher_certificate_S7iSjFD.jpeg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 79,
+        "fields": {
+            "user": [
+                "guptaomkrishna@akgec.ac.in"
+            ],
+            "college_email": "guptaomkrishna@akgec.ac.in",
+            "phone_number": "9958001720",
+            "name": "Om Krishna Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-06-26",
+            "end_date": "2019-07-03",
+            "number_of_days": "7",
+            "venue": "KEC, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/8573",
+            "certificate": "UHV_level_1_certificate.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 80,
+        "fields": {
+            "user": [
+                "sharmauma@akgec.ac.in"
+            ],
+            "college_email": "sharmauma@akgec.ac.in",
+            "phone_number": "9953374640",
+            "name": "Uma Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2018-06-23",
+            "end_date": "2018-06-30",
+            "number_of_days": "8",
+            "venue": "ABES, Ghaziabad",
+            "certificate_number": "180643068",
+            "certificate": "20221104_104555.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 81,
+        "fields": {
+            "user": [
+                "guptaneelesh@akgec.ac.in"
+            ],
+            "college_email": "guptaneelesh@akgec.ac.in",
+            "phone_number": "9826191439",
+            "name": "Dr Neelesh Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-05-21",
+            "end_date": "2019-05-28",
+            "number_of_days": "7",
+            "venue": "ABES Engineering College, Ghaziabad",
+            "certificate_number": "H190507019",
+            "certificate": "Human_Values_certificate_Level1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Already done Refresher FDP, certificate is awaited."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 82,
+        "fields": {
+            "user": [
+                "kumaralok@akgec.ac.in"
+            ],
+            "college_email": "kumaralok@akgec.ac.in",
+            "phone_number": "9760141072",
+            "name": "Alok Kumar",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-07-04",
+            "end_date": "2019-07-11",
+            "number_of_days": "8",
+            "venue": "IPEC, Ghaziabad",
+            "certificate_number": "190768002",
+            "certificate": "DOC-20221104-WA0002..pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 83,
+        "fields": {
+            "user": [
+                "gahlotsonali@akgec.ac.in"
+            ],
+            "college_email": "gahlotsonali@akgec.ac.in",
+            "phone_number": "8126302891",
+            "name": "Sonali Gahlot",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2022-10-10",
+            "end_date": "2022-10-14",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "153061",
+            "certificate": "1667289362730_10-14thOctUHVFDPOnline.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "I have completed UHV 1."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 84,
+        "fields": {
+            "user": [
+                "yadavsandeep@akgec.ac.in"
+            ],
+            "college_email": "yadavsandeep@akgec.ac.in",
+            "phone_number": "9718568929",
+            "name": "Sandeep Yadav",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2022-10-10",
+            "end_date": "2022-10-14",
+            "number_of_days": "4",
+            "venue": "undefined",
+            "certificate_number": "F.No AICTE/FDP-SI/OnlineWorkshop/201/152394",
+            "certificate": "10-14thOctUHVFDPOnline_1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "OK"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 85,
+        "fields": {
+            "user": [
+                "chauhandushyant@akgec.ac.in"
+            ],
+            "college_email": "chauhandushyant@akgec.ac.in",
+            "phone_number": "9555640024",
+            "name": "dushyant singh chauhan",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-07-04",
+            "end_date": "2019-07-11",
+            "number_of_days": "7",
+            "venue": "Inderprastha Engineering College Ghaziabad",
+            "certificate_number": "190768019",
+            "certificate": "HUMMAN_VALUES_CERTIFICATE_LEVEL-1.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 86,
+        "fields": {
+            "user": [
+                "vermaakhilesh@akgec.ac.in"
+            ],
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2012-05-09",
+            "end_date": "2012-05-16",
+            "number_of_days": "8",
+            "venue": "IIT KANPUR",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/5221",
+            "certificate": "16676333334918585429329958052433.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Na"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 87,
+        "fields": {
+            "user": [
+                "sharmarenu@akgec.ac.in"
+            ],
+            "college_email": "sharmarenu@akgec.ac.in",
+            "phone_number": "9999046408",
+            "name": "Renu Sharma",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2019-12-26",
+            "end_date": "2020-01-02",
+            "number_of_days": "8",
+            "venue": "KIET, Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/167/13849",
+            "certificate": "KIET26Dec2019-2jan2020_2.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 88,
+        "fields": {
+            "user": [
+                "vermaakhilesh@akgec.ac.in"
+            ],
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College",
+            "certificate_number": "R161203001",
+            "certificate": "16676335452277399364853872536090.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Na"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 89,
+        "fields": {
+            "user": [
+                "vermaakhilesh@akgec.ac.in"
+            ],
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-05-10",
+            "end_date": "2017-05-16",
+            "number_of_days": "7",
+            "venue": "Maharana Prataap Engineering College",
+            "certificate_number": "R170504003",
+            "certificate": "16676339519064332151926729745869.jpg",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "Ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 90,
+        "fields": {
+            "user": [
+                "vermaakhilesh@akgec.ac.in"
+            ],
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2018-12-03",
+            "end_date": "2018-12-10",
+            "number_of_days": "8",
+            "venue": "ABES Engineering College",
+            "certificate_number": "3L1812020001",
+            "certificate": "16676341272086691292570686325345.jpg",
+            "incentive_detail": "AKTU Level-3 (15,000)",
+            "remarks": "Ok"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 91,
+        "fields": {
+            "user": [
+                "vermaakhilesh@akgec.ac.in"
+            ],
+            "college_email": "vermaakhilesh@akgec.ac.in",
+            "phone_number": "9971897996",
+            "name": "Akhilesh Verma",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on HVMD",
+            "online_fdp": "",
+            "starting_date": "2019-12-10",
+            "end_date": "2019-12-19",
+            "number_of_days": "10",
+            "venue": "IIT Kanpur",
+            "certificate_number": "HVMD191201001",
+            "certificate": "1667634288161199912157458636547.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "Na"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 92,
+        "fields": {
+            "user": [
+                "bansalnishu@akgec.ac.in"
+            ],
+            "college_email": "bansalnishu@akgec.ac.in",
+            "phone_number": "7042434673",
+            "name": "Nishu Bansal",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "F.No AICTE/FDP-SI/NRO/226/88083",
+            "certificate": "AKGEC1-8September2021_HV_FRESHER_CERTI.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "NIL"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 93,
+        "fields": {
+            "user": [
+                "mishraupasana@akgec.ac.in"
+            ],
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2010-06-09",
+            "end_date": "2010-06-16",
+            "number_of_days": "8",
+            "venue": "IIT, Kanpur",
+            "certificate_number": "AICTE/FDP-SI/AKTU-BTU-PTU/184/5095",
+            "certificate": "Level1_.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": ""
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 94,
+        "fields": {
+            "user": [
+                "mishraupasana@akgec.ac.in"
+            ],
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2017-05-10",
+            "end_date": "2017-05-16",
+            "number_of_days": "7",
+            "venue": "MPEC, Kanpur",
+            "certificate_number": "R170504023",
+            "certificate": "Level2_.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 95,
+        "fields": {
+            "user": [
+                "mishraupasana@akgec.ac.in"
+            ],
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "2L171102028",
+            "certificate": "Level2II_.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 96,
+        "fields": {
+            "user": [
+                "mishraupasana@akgec.ac.in"
+            ],
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2018-05-01",
+            "end_date": "2018-05-08",
+            "number_of_days": "8",
+            "venue": "ABESEC, Ghaziabad",
+            "certificate_number": "3L180501021",
+            "certificate": "Level3_2.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 97,
+        "fields": {
+            "user": [
+                "mishraupasana@akgec.ac.in"
+            ],
+            "college_email": "mishraupasana@akgec.ac.in",
+            "phone_number": "9891644950",
+            "name": "Dr UPASANA MISHRA",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU 10 days FDP on VREHC",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "10",
+            "venue": "IIT, Kanpur",
+            "certificate_number": "UHV3191201052",
+            "certificate": "10dayworkshop.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 98,
+        "fields": {
+            "user": [
+                "jainjaishree@akgec.ac.in"
+            ],
+            "college_email": "jainjaishree@akgec.ac.in",
+            "phone_number": "7055455947",
+            "name": "Jaishree Jain",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2020-01-06",
+            "end_date": "2020-01-13",
+            "number_of_days": "8",
+            "venue": "Hindustan College of Science & Technology, Mathura",
+            "certificate_number": "AICTE/FDP-SI/NRO/80/12874",
+            "certificate": "HCSTMathura.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 99,
+        "fields": {
+            "user": [
+                "kumar.sachin@akgec.ac.in"
+            ],
+            "college_email": "kumar.sachin@akgec.ac.in",
+            "phone_number": "9999132283",
+            "name": "Sachin Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "ABES",
+            "certificate_number": "161212058",
+            "certificate": "FDP_HV.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 100,
+        "fields": {
+            "user": [
+                "kumar.sachin@akgec.ac.in"
+            ],
+            "college_email": "kumar.sachin@akgec.ac.in",
+            "phone_number": "9999132283",
+            "name": "Sachin Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-12-17",
+            "end_date": "2018-12-24",
+            "number_of_days": "8",
+            "venue": "AKGEC",
+            "certificate_number": "R181212020",
+            "certificate": "Dr._Sachin_HVPE_Refresher.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 101,
+        "fields": {
+            "user": [
+                "kumar.sachin@akgec.ac.in"
+            ],
+            "college_email": "kumar.sachin@akgec.ac.in",
+            "phone_number": "9999132283",
+            "name": "Sachin Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2019-12-20",
+            "end_date": "2019-12-29",
+            "number_of_days": "10",
+            "venue": "IIT Kanpur",
+            "certificate_number": "UHV3191201039",
+            "certificate": "Scan_Nov_07_2022.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 102,
+        "fields": {
+            "user": [
+                "yasminnilufar@akgec.ac.in"
+            ],
+            "college_email": "yasminnilufar@akgec.ac.in",
+            "phone_number": "8076679757",
+            "name": "Nilufar Yasmin",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2018-12-17",
+            "end_date": "2018-12-24",
+            "number_of_days": "8",
+            "venue": "Ajay Kumar Garg Engineering College",
+            "certificate_number": "R181212014",
+            "certificate": "Human_values_Refresher_certificate_nnECWFE.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 103,
+        "fields": {
+            "user": [
+                "guptatukur@akgec.ac.in"
+            ],
+            "college_email": "guptatukur@akgec.ac.in",
+            "phone_number": "8800904784",
+            "name": "Tukur Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2022-04-06",
+            "end_date": "2022-04-13",
+            "number_of_days": "8",
+            "venue": "AKGEC, Ghaziabad",
+            "certificate_number": "F.No AICTE/FDP-SI/NRO/226/132560",
+            "certificate": "6-13April2022AKGEC_3bCbe2J.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 104,
+        "fields": {
+            "user": [
+                "guptatukur@akgec.ac.in"
+            ],
+            "college_email": "guptatukur@akgec.ac.in",
+            "phone_number": "8800904784",
+            "name": "Tukur Gupta",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2021-10-18",
+            "end_date": "2021-10-22",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "F.No AICTE/FDP-SI/OnlineWorkshop/217/96513",
+            "certificate": "18-22October2021.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 105,
+        "fields": {
+            "user": [
+                "asthanaamita@akgec.ac.in"
+            ],
+            "college_email": "asthanaamita@akgec.ac.in",
+            "phone_number": "8948530222",
+            "name": "Amita Asthana",
+            "department": "Electronics And Communication Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "AKGEC, GHZIABAD",
+            "certificate_number": "F.No AICTE/FDP-SI/NRO/226/87962",
+            "certificate": "AKGEC1-8September2021_XJsfcKb.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "NA"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 106,
+        "fields": {
+            "user": [
+                "rashi@akgec.ac.in"
+            ],
+            "college_email": "rashi@akgec.ac.in",
+            "phone_number": "9818112435",
+            "name": "Rashi",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "ABES College, Ghaziabad",
+            "certificate_number": "171127026",
+            "certificate": "06588950-F0DB-4C38-ADAF-943D8A250B31.jpeg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 107,
+        "fields": {
+            "user": [
+                "kumarakash@akgec.ac.in"
+            ],
+            "college_email": "kumarakash@akgec.ac.in",
+            "phone_number": "9927190229",
+            "name": "Dr. AKASH KUMAR",
+            "department": "Applied Sciences & Humanities",
+            "designation": "ASSISTANT PROFESSOR",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-06-03",
+            "end_date": "2019-06-10",
+            "number_of_days": "8",
+            "venue": "KIET, MURADNAGAR",
+            "certificate_number": "AICTEFDP-SIAKTU-BTU-PTU1848386",
+            "certificate": "HUMAN_VALUES_CERTIFICATE_KIET_AICTEFDP-SIAKTU-BTU-PTU1848386Dr.AKASH_KUMAR.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 108,
+        "fields": {
+            "user": [
+                "rashi@akgec.ac.in"
+            ],
+            "college_email": "rashi@akgec.ac.in",
+            "phone_number": "9818112435",
+            "name": "Rashi",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AICTE UHV-II",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "AKGEC Ghaziabad",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/87952",
+            "certificate": "CABF7C24-9F5D-4BDF-9BFB-315298B51783.jpeg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 109,
+        "fields": {
+            "user": [
+                "kumarakash@akgec.ac.in"
+            ],
+            "college_email": "kumarakash@akgec.ac.in",
+            "phone_number": "9927190229",
+            "name": "Dr. AKASH KUMAR",
+            "department": "Applied Sciences & Humanities",
+            "designation": "ASSISTANT PROFESSOR",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2021-09-01",
+            "end_date": "2021-09-08",
+            "number_of_days": "8",
+            "venue": "AKGEC,GHAZIABAD",
+            "certificate_number": "AICTE/FDP-SI/NRO/226/87964",
+            "certificate": "AKGEC1-8_Sept_2021UHV-_FDP_CERTIFICATEDr.AKASH_KUMAR.pdf",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "."
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 113,
+        "fields": {
+            "user": [
+                "kumar.manish@akgec.ac.in"
+            ],
+            "college_email": "kumar.manish@akgec.ac.in",
+            "phone_number": "9837802850",
+            "name": "Manish Kumar",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2022-10-17",
+            "end_date": "2022-10-21",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "152826",
+            "certificate": "17-21stOctober2022UHVFDPOnline.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "only Done online First FDP on UHV"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 114,
+        "fields": {
+            "user": [
+                "guptaaman@akgec.ac.in"
+            ],
+            "college_email": "guptaaman@akgec.ac.in",
+            "phone_number": "8500215048",
+            "name": "Aman Gupta",
+            "department": "Master Of Computer Applications",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2019-11-01",
+            "end_date": "2019-11-09",
+            "number_of_days": "9",
+            "venue": "ABCD",
+            "certificate_number": "12345",
+            "certificate": "QS_I-GAUGE_College_Certificate_AKGEC.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "ABCD"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 115,
+        "fields": {
+            "user": [
+                "roshanvikas@akgec.ac.in"
+            ],
+            "college_email": "roshanvikas@akgec.ac.in",
+            "phone_number": "9911752833",
+            "name": "VIKAS ROSHAN",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-1",
+            "online_fdp": "",
+            "starting_date": "2016-06-17",
+            "end_date": "2016-06-24",
+            "number_of_days": "8",
+            "venue": "AKGEC, GHAZIABAD",
+            "certificate_number": "160605092",
+            "certificate": "1_hvpe_level_1.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 116,
+        "fields": {
+            "user": [
+                "kumar.anuj@akgec.ac.in"
+            ],
+            "college_email": "kumar.anuj@akgec.ac.in",
+            "phone_number": "9990544554",
+            "name": "ANUJ KUMAR",
+            "department": "Computer Science And Engineering",
+            "designation": "Assistant Professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2022-10-17",
+            "end_date": "2022-10-21",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "AICTE/FDP-SI/OnlineWorkshop/229/152819",
+            "certificate": "17-21stOctober2022UHVFDPOnline_2WI39Mo.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "DONE ONLINE HVPE 1"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 117,
+        "fields": {
+            "user": [
+                "sharmarashmi@akgec.ac.in"
+            ],
+            "college_email": "sharmarashmi@akgec.ac.in",
+            "phone_number": "9910565491",
+            "name": "Dr Rashmi Sharma",
+            "department": "Information Technology",
+            "designation": "assistant professor",
+            "fdp_type": "Online",
+            "face_to_face_fdp": "",
+            "online_fdp": "AICTE-5 Day Online UHV-I",
+            "starting_date": "2022-07-18",
+            "end_date": "2022-07-22",
+            "number_of_days": "5",
+            "venue": "undefined",
+            "certificate_number": "F.No AICTE/FDP-SI/OnlineWorkshop/229/142628",
+            "certificate": "Human_Value_18_july_-_22july2022.pdf",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 118,
+        "fields": {
+            "user": [
+                "roshanvikas@akgec.ac.in"
+            ],
+            "college_email": "roshanvikas@akgec.ac.in",
+            "phone_number": "9911752833",
+            "name": "VIKAS ROSHAN",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Refresher",
+            "online_fdp": "",
+            "starting_date": "2016-12-26",
+            "end_date": "2017-01-02",
+            "number_of_days": "8",
+            "venue": "AKGEC, GHAZIABAD",
+            "certificate_number": "R161203023",
+            "certificate": "2_hvpe_refresher.jpg",
+            "incentive_detail": "Not Eligible",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 119,
+        "fields": {
+            "user": [
+                "roshanvikas@akgec.ac.in"
+            ],
+            "college_email": "roshanvikas@akgec.ac.in",
+            "phone_number": "9911752833",
+            "name": "VIKAS ROSHAN",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-2",
+            "online_fdp": "",
+            "starting_date": "2017-11-30",
+            "end_date": "2017-12-07",
+            "number_of_days": "8",
+            "venue": "AKGEC, GHAZIABAD",
+            "certificate_number": "2l171102031",
+            "certificate": "3_uhvpe_level_2_certificate.jpeg",
+            "incentive_detail": "AKTU Level-2 (10,000)",
+            "remarks": "null"
+        }
+    },
+    {
+        "model": "form.registration",
+        "pk": 120,
+        "fields": {
+            "user": [
+                "roshanvikas@akgec.ac.in"
+            ],
+            "college_email": "roshanvikas@akgec.ac.in",
+            "phone_number": "9911752833",
+            "name": "VIKAS ROSHAN",
+            "department": "Applied Sciences & Humanities",
+            "designation": "Assistant Professor",
+            "fdp_type": "Face to Face FDP",
+            "face_to_face_fdp": "AKTU Level-3",
+            "online_fdp": "",
+            "starting_date": "2019-05-09",
+            "end_date": "2019-05-16",
+            "number_of_days": "8",
+            "venue": "AKGEC, GHAZIABAD",
+            "certificate_number": "3L190503021",
+            "certificate": "4_Level_3_uhvpe.jpg",
+            "incentive_detail": "Not Taken Yet",
+            "remarks": "null"
+        }
+    }
+]
