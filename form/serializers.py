@@ -198,6 +198,12 @@ class FacultyParticipationFormSerializer(serializers.ModelSerializer):
         validated_data['starting_date'] = datetime.strptime(data['starting_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
         validated_data['end_date'] = datetime.strptime(data['end_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
         return super().create(validated_data)
+
+    def update(self, instance, validated_data):
+        data = self.context['request'].data
+        validated_data['starting_date'] = datetime.strptime(data['starting_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        validated_data['end_date'] = datetime.strptime(data['end_date'], "%d-%m-%Y").strftime('%Y-%m-%d')
+        return super().update(instance, validated_data)
     
     def get_is_admin(self, instance):
         request = self.context['request']

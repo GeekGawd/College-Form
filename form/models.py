@@ -197,3 +197,6 @@ class FacultyParticipationForm(models.Model):
     starting_date = models.DateField()
     end_date = models.DateField()
     remarks = models.TextField(blank=True, null=True)
+
+    def __str__(self) -> str:
+        return f'{self.email}---{self.name}'
