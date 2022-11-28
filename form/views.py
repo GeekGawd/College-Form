@@ -1,8 +1,8 @@
 from rest_framework import generics, mixins, parsers, status
 from rest_framework.response import Response
 from form.backends import AdminAuthentication
-from form.models import Registration, User, StudentForm, FacultyParticipationForm
-from form.serializers import AuthTokenSerializer, FacultyParticipationFormSerializer, RegistrationSerializer, StudentFormSerializer, UserDetailSerializer, UserSerializer, ChangePasswordSerializer
+from form.models import Registration, User, StudentForm, FacultyParticipationForm, CheckBoxAdmin
+from form.serializers import AuthTokenSerializer, FacultyParticipationFormSerializer, RegistrationSerializer, StudentFormSerializer, UserDetailSerializer, UserSerializer, ChangePasswordSerializer, CheckBoxSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from form.models import OTP
 import random
@@ -471,3 +471,29 @@ class FacultyParticipationFormListView(generics.GenericAPIView,
 
     def post(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
+
+class CheckBoxView(generics.GenericAPIView,
+                  mixins.RetrieveModelMixin,
+                  mixins.CreateModelMixin,
+                  mixins.UpdateModelMixin):
+
+    serializer_class = CheckBoxSerializer
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [AdminAuthentication]
+
+    def get_object(self):
+        q= CheckBoxAdmin.objects.all()
+        if(len(q)): return q[0]
+        return CheckBoxAdmin.objects.create()
+
+    def get(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+    
+    def post(self, request, *args, **kwargs):
+        # request.data.update({"user": request.user.id})
+        q=CheckBoxAdmin.objects.all()
+        if(len(q)): q=q[0]
+        else: q=CheckBoxAdmin.objects.create()
+        q.checkbox = request.data['check']
+        q.save()
+        return super().update(request, *args, **kwargs)

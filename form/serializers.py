@@ -1,6 +1,6 @@
 from dataclasses import field
 from rest_framework import serializers
-from form.models import FacultyParticipationForm, Registration, User, StudentForm
+from form.models import FacultyParticipationForm, Registration, User, StudentForm, CheckBoxAdmin
 from django.core.mail import EmailMessage
 from django.core.exceptions import ValidationError
 import re, itertools
@@ -265,3 +265,8 @@ class UserDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['college_email', 'phone_number', 'name', 'department', 'designation']
+
+class CheckBoxSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CheckBoxAdmin
+        fields = '__all__'

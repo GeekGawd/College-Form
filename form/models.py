@@ -200,3 +200,9 @@ class FacultyParticipationForm(models.Model):
 
     def __str__(self) -> str:
         return f'{self.email}---{self.name}'
+
+class CheckBoxAdmin(models.Model):
+    checkbox = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return self.check

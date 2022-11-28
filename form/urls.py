@@ -45,4 +45,6 @@ urlpatterns = [
 
     path('faculty-form/list/', FacultyParticipationFormListView.as_view(), name='FacultyForm-list-view'),
 
+    path('check/', CheckBoxView.as_view(), name='CheckBox-admin-post'),
+
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
